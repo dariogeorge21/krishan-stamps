@@ -56,13 +56,13 @@ export default function ServiceAreaMap({ areas }: ServiceAreaMapProps) {
             {/* Map */}
             <div className="bg-muted rounded-lg overflow-hidden shadow-md h-96">
               <iframe
-                width="100%"
-                height="100%"
-                loading="lazy"
-                title="Krishan Stamps Service Area - Delhi NCR"
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=28.6139,77.2090&z=11&output=embed"
-                className="border-0"
+              width="100%"
+              height="100%"
+              loading="lazy"
+              title="Krishan Stamps Service Area - Delhi NCR"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17491.611492731492!2d77.28378786678655!3d28.630655694714637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcaa1c7b143f%3A0xc6b99e335f6d144d!2sKrishan%20Stapm%20Maker!5e1!3m2!1sen!2sin!4v1765619351726!5m2!1sen!2sin"
+              className="border-0"
               />
             </div>
 

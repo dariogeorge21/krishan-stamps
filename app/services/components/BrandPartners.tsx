@@ -27,11 +27,13 @@ export default function BrandPartners({ partners }: BrandPartnersProps) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {partners.map((partner, index) => (
               <div key={index} className="bg-surface rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 group">
-                <div className="aspect-square flex items-center justify-center mb-4 overflow-hidden rounded-md bg-muted">
+                <div className="aspect-square flex items-center justify-center mb-4 overflow-hidden rounded-md bg-muted relative">
                   <Image
                     src={partner.logo}
                     alt={partner.alt}
-                    className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-300"
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    className="object-contain p-4 group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
                 <h3 className="font-headline text-lg font-bold text-text-primary text-center mb-2">
