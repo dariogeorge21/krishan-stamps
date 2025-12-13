@@ -1,4 +1,5 @@
-import Icon from '@/components/ui/AppIcon';
+import React from 'react';
+import * as Icons from 'lucide-react';
 
 interface ProcessStep {
   number: string;
@@ -42,7 +43,11 @@ export default function ProcessTimeline({ steps }: ProcessTimelineProps) {
 
                   {/* Icon */}
                   <div className="flex justify-center mb-4">
-                    <Icon name={step.icon as any} size={32} variant="outline" className="text-accent" />
+                    {Icons[step.icon as keyof typeof Icons] ? (
+                      React.createElement(Icons[step.icon as keyof typeof Icons] as React.ElementType, { size: 32, className: "text-accent" })
+                    ) : (
+                      <span className="text-accent">Icon not found</span>
+                    )}
                   </div>
 
                   {/* Title */}
