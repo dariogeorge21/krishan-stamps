@@ -1,26 +1,103 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Brand Colors */
+    --color-primary: #2C5F7C; /* Deep Professional Blue - trust and reliability */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #8B4513; /* Warm Craftsmanship Brown - artisanal quality */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    --color-accent: #FF6B35; /* Energetic Orange - action and urgency */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Background Colors */
+    --color-background: #F8F9FA; /* Clean Neutral - professional backdrop */
+    --color-foreground: #1A1A1A; /* Authority Black - primary text */
+    --color-surface: #FFFFFF; /* white - cards and elevated surfaces */
+    
+    /* UI Element Colors */
+    --color-border: #E5E7EB; /* gray-200 - subtle borders */
+    --color-input: #FFFFFF; /* white - form inputs */
+    --color-ring: #3B82F6; /* blue-500 - focus rings */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* white - card backgrounds */
+    --color-card-foreground: #1A1A1A; /* Authority Black - card text */
+    
+    /* Popover Colors */
+    --color-popover: #FFFFFF; /* white - popover backgrounds */
+    --color-popover-foreground: #1A1A1A; /* Authority Black - popover text */
+    
+    /* Muted Colors */
+    --color-muted: #F3F4F6; /* gray-100 - muted backgrounds */
+    --color-muted-foreground: #4A5568; /* Approachable Gray - secondary text */
+    
+    /* State Colors */
+    --color-destructive: #DC143C; /* Action Red - errors and destructive actions */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    --color-success: #228B22; /* Confidence Green - success states */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #FF6B35; /* Energetic Orange - warnings */
+    --color-warning-foreground: #FFFFFF; /* white */
+    --color-error: #DC143C; /* Action Red - error states */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Additional Brand Colors */
+    --color-trust: #228B22; /* Confidence Green - trust indicators */
+    --color-trust-foreground: #FFFFFF; /* white */
+    --color-craftsmanship: #8B4513; /* Warm Craftsmanship Brown */
+    --color-craftsmanship-foreground: #FFFFFF; /* white */
+    
+    /* Typography Colors */
+    --color-text-primary: #1A1A1A; /* Authority Black - headlines and key messaging */
+    --color-text-secondary: #4A5568; /* Approachable Gray - supporting content */
+    
+    /* Spacing and Layout */
+    --spacing-base: 8px;
+    --spacing-rhythm: 24px;
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(44, 95, 124, 0.1);
+    --shadow-md: 0 4px 12px rgba(44, 95, 124, 0.15);
+    --shadow-lg: 0 10px 24px rgba(44, 95, 124, 0.2);
+    
+    /* Transitions */
+    --transition-fast: 200ms ease-in-out;
+    --transition-base: 300ms ease-out;
+    --transition-slow: 400ms ease-out;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply text-text-primary;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
