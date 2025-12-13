@@ -47,7 +47,7 @@ Comprehensive custom stamp manufacturing and printing solutions for businesses a
 - Steel and brass plates
 - Plastic plates
 
-#### Brand Partnerships
+#### Used Brands
 - Trodat
 - Dura
 - Sun
@@ -95,5 +95,3 @@ Comprehensive custom stamp manufacturing and printing solutions for businesses a
 - **Brand Partnerships:** Authorized dealer for major stamp brands (Trodat, Dura, Sun, Colop)
 
 ---
-
-*This report provides a comprehensive overview of Krishan Stamps Maker's business operations, market position, and service offerings as of 2024.*
