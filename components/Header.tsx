@@ -8,7 +8,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigationItems = [
-    { label: 'Home', href: '/homepage' },
+    { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Services', href: '/services' },
     { label: 'Contact', href: '/contact' },
@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-20 px-4 lg:px-8">
           {/* Logo Section */}
-          <Link href="/homepage" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative w-12 h-12 flex items-center justify-center bg-primary rounded-md transition-transform duration-300 group-hover:scale-105">
               <svg
                 viewBox="0 0 48 48"
