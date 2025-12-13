@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Icon from '@/components/ui/AppIcon';
+import { MapPin, CheckCircle, Clock, Zap } from 'lucide-react';
 
 interface ServiceArea {
   name: string;
@@ -70,7 +70,7 @@ export default function ServiceAreaMap({ areas }: ServiceAreaMapProps) {
             <div className="space-y-4">
               <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Icon name="MapPinIcon" size={24} variant="solid" className="text-primary" />
+                  <MapPin size={24} className="text-primary" />
                   <h3 className="font-headline text-xl font-bold text-text-primary">
                     Coverage Areas
                   </h3>
@@ -78,7 +78,7 @@ export default function ServiceAreaMap({ areas }: ServiceAreaMapProps) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {areas.map((area, index) => (
                     <div key={index} className="flex items-start space-x-2">
-                      <Icon name="CheckCircleIcon" size={18} variant="solid" className="text-success flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={18} className="text-success flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="font-body text-sm font-semibold text-text-primary">{area.name}</p>
                         <p className="font-body text-xs text-text-secondary">{area.coverage}</p>
@@ -90,7 +90,7 @@ export default function ServiceAreaMap({ areas }: ServiceAreaMapProps) {
 
               <div className="bg-accent/5 rounded-lg p-6 border border-accent/20">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Icon name="ClockIcon" size={24} variant="solid" className="text-accent" />
+                  <Clock size={24} className="text-accent" />
                   <h3 className="font-headline text-xl font-bold text-text-primary">
                     Service Hours
                   </h3>
@@ -109,7 +109,7 @@ export default function ServiceAreaMap({ areas }: ServiceAreaMapProps) {
 
               <div className="bg-success/5 rounded-lg p-6 border border-success/20">
                 <div className="flex items-center space-x-3 mb-3">
-                  <Icon name="BoltIcon" size={24} variant="solid" className="text-success" />
+                  <Zap size={24} className="text-success" />
                   <h3 className="font-headline text-xl font-bold text-text-primary">
                     Express Service
                   </h3>
