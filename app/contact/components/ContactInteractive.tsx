@@ -8,6 +8,7 @@ import LocationMap from './LocationMap';
 import QuoteRequestForm from './QuoteRequestForm';
 import PaymentMethods from './PaymentMethods';
 import FAQSection from './FAQSection';
+import Footer from '@/components/Footer';
 import FloatingContactButtons from './FloatingContactButtons';
 
 interface ContactMethod {
@@ -216,6 +217,7 @@ export default function ContactInteractive() {
       </section>
 
       <FloatingContactButtons />
+        <Footer />
     </>);
 
 }
