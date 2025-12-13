@@ -1,5 +1,4 @@
-import AppImage from '@/components/ui/AppImage';
-
+import Image from "next/image";
 interface BrandPartner {
   name: string;
   logo: string;
@@ -29,7 +28,7 @@ export default function BrandPartners({ partners }: BrandPartnersProps) {
             {partners.map((partner, index) => (
               <div key={index} className="bg-surface rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 group">
                 <div className="aspect-square flex items-center justify-center mb-4 overflow-hidden rounded-md bg-muted">
-                  <AppImage
+                  <Image
                     src={partner.logo}
                     alt={partner.alt}
                     className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-300"
