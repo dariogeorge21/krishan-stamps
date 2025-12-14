@@ -19,25 +19,54 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
   const heroSlides = [
   {
     title: "Making Your Mark Matter",
-    subtitle: "Professional Stamp Solutions Since 2012",
+    subtitle: "Professional Stamp Solutions Since 1990",
     description: "Transform your business identity with precision-crafted stamps, seals, and plates. Same-day service available for urgent needs.",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a571eaff-1765302422516.png",
+    image: "/images/image4.jpeg",
     alt: "Close-up of professional rubber stamp being pressed on official document with blue ink pad"
   },
   {
-    title: "12+ Years of Precision",
+    title: "25+ Years of Precision",
     subtitle: "Trusted by 5000+ Businesses",
     description: "From small enterprises to corporate giants, we deliver quality stamping solutions that stand the test of time.",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1bfe89ea8-1764657313919.png",
+    image: "/images/image5.jpeg",
     alt: "Artisan craftsman carefully engraving custom stamp design on wooden workbench with precision tools"
   },
   {
-    title: "Same Day Solutions",
+    title: "Quickest Solutions",
     subtitle: "Speed Without Compromise",
-    description: "Need it today? We've got you covered. Express service for urgent business requirements without sacrificing quality.",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_19caddd2d-1765455217361.png",
+    description: "Need it today? We offer the quickest response within 2 hours for select products without sacrificing quality.",
+    image: "/images/image20.jpeg",
     alt: "Modern stamp manufacturing workspace with organized tools and completed custom stamps ready for delivery"
-  }];
+  },
+  {
+    title: "Quality You Can Trust",
+    subtitle: "Certified and Guaranteed",
+    description: "Our stamps are made with the highest quality materials and craftsmanship, ensuring they last for years to come.",
+    image: "/images/image7.jpeg",
+    alt: "Close-up of high-quality custom stamp with intricate design and clear imprint"
+  },
+  {
+    title: "Contact Us Today",
+    subtitle: "Your Perfect Stamp Awaits",
+    description: "Get in touch for a free quote and experience our exceptional customer service and expert advice.",
+    image: "/images/image19.jpeg",
+    alt: "Friendly customer service representative assisting client with stamp order over the phone"
+  },
+  {
+    title: "Since 1990",
+    subtitle: "Experience the Krishan Stamps Difference",
+    description: "With over three decades of expertise, we are your reliable partner for all stamping needs.",
+    image: "/images/image18.jpeg",
+    alt: "Exterior view of Krishan Stamps Maker storefront showcasing professional stamp services"
+  },
+  {
+    title: "Custom Solutions",
+    subtitle: "Tailored Stamps for Every Need",
+    description: "From rubber stamps to embossing seals, we customize each product to meet your specific requirements.",
+    image: "/images/image16.jpeg",
+    alt: "Variety of custom rubber stamps and embossing seals displayed on wooden table"
+  }
+];
 
 
   useEffect(() => {
@@ -77,7 +106,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
   }
 
   return (
-    <section className="relative h-[600px] lg:h-[700px] overflow-hidden">
+    <section className="relative h-[750px] lg:h-[700px] overflow-hidden">
       {/* Background Image Slider */}
       <div className="absolute inset-0">
         {heroSlides.map((slide, index) =>
@@ -102,7 +131,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
 
       {/* Content */}
       <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center">
-        <div className="max-w-2xl text-primary-foreground">
+        <div className="max-w-2xl text-white">
           <div className="mb-6 flex items-center space-x-4">
             <div className="flex items-center space-x-2 bg-accent/20 backdrop-blur-sm px-4 py-2 rounded-full">
               <Star size={20} className="text-warning" />
@@ -114,7 +143,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
             </div>
           </div>
 
-          <h1 className="font-headline text-4xl lg:text-6xl font-bold mb-4 leading-tight">
+          <h1 className="font-headline text-4xl lg:text-6xl font-bold mb-4 leading-tight text-white">
             {heroSlides[currentSlide].title}
           </h1>
           
@@ -148,7 +177,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
           <div className="mt-8 flex flex-wrap items-center gap-6 text-sm">
             <div className="flex items-center space-x-2">
               <Clock size={18} />
-              <span className="font-body">Same Day Service</span>
+              <span className="font-body">Quickest Services</span>
             </div>
             <div className="flex items-center space-x-2">
               <ShieldCheck size={18} />
@@ -156,12 +185,12 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
             </div>
             <div className="flex items-center space-x-2">
               <Truck size={18} />
-              <span className="font-body">Free Delivery</span>
+              <span className="font-body">Quick Delivery</span>
             </div>
           </div>
         </div>
       </div>
-
+      <br></br>
       {/* Navigation Controls */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center space-x-4">
         <button
