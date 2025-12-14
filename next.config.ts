@@ -12,6 +12,27 @@ const nextConfig: NextConfig = {
           protocol: 'https',
           hostname: 'images.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'stampvala.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.stampsonclick.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.shivanienterprises.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.simplystamps.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'm.media-amazon.com',
+      },
+      
     ],
   },
 };
