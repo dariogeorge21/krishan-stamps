@@ -32,6 +32,18 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'm.media-amazon.com',
       },
+      {
+        protocol: 'https',
+        hostname: '4.imimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '5.imimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'tiimg.tistatic.com',
+      },
       
     ],
   },
