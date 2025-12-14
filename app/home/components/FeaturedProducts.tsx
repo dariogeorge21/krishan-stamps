@@ -30,7 +30,7 @@ const FeaturedProducts = () => {
     name: "Self-Inking Stamps",
     category: "Stamps",
     description: "Premium quality self-inking stamps with up to 10,000 impressions. Available in multiple sizes and colors.",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_155bfd107-1765302420296.png",
+    image: "https://4.imimg.com/data4/BJ/DH/ANDROID-4113541/product-500x500.jpeg",
     alt: "Professional self-inking rubber stamp with blue ink pad showing clear impression on white paper",
     features: ["10,000+ Impressions", "Multiple Colors", "Custom Design"],
     popular: true
@@ -40,7 +40,7 @@ const FeaturedProducts = () => {
     name: "Embossing Seals",
     category: "Seals",
     description: "Elegant embossing seals for official documents. Create professional raised impressions that last.",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1668d3d7a-1765031734317.png",
+    image: "https://m.media-amazon.com/images/I/71Uo6XtGAxL.jpg",
     alt: "Gold embossing seal creating raised circular impression on cream colored official document",
     features: ["Premium Quality", "Custom Design", "Durable Metal"],
     popular: true
@@ -50,7 +50,7 @@ const FeaturedProducts = () => {
     name: "Date Stamps",
     category: "Stamps",
     description: "Adjustable date stamps perfect for offices. Easy to change dates with clear, crisp impressions.",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1f45be74c-1765302421185.png",
+    image: "https://www.stampsonclick.com/uploads/brand_image/11-07-2017_Colop.jpg",
     alt: "Modern adjustable date stamp with rotating wheels showing current date in black ink",
     features: ["Easy Date Change", "Clear Impression", "Long Lasting"],
     popular: false
@@ -60,7 +60,7 @@ const FeaturedProducts = () => {
     name: "Name Plates",
     category: "Plates",
     description: "Professional name plates in brass, steel, and acrylic. Perfect for offices and homes.",
-    image: "https://images.unsplash.com/photo-1716488764186-78eb7351d276",
+    image: "https://5.imimg.com/data5/CQ/NP/MY-3498091/name-plates-500x500.jpg",
     alt: "Polished brass name plate with engraved text mounted on dark wooden door",
     features: ["Multiple Materials", "Custom Engraving", "Premium Finish"],
     popular: true
@@ -70,7 +70,7 @@ const FeaturedProducts = () => {
     name: "Rubber Stamps",
     category: "Stamps",
     description: "Traditional rubber stamps with wooden handles. Reliable and cost-effective solution.",
-    image: "https://images.unsplash.com/photo-1593448807258-e50956785800",
+    image: "https://tiimg.tistatic.com/fp/1/004/927/customized-made-rubber-stamps-781.jpg",
     alt: "Classic wooden handle rubber stamp with red ink pad on vintage desk",
     features: ["Cost Effective", "Durable Rubber", "Custom Text"],
     popular: false
@@ -80,7 +80,7 @@ const FeaturedProducts = () => {
     name: "Common Seals",
     category: "Seals",
     description: "Official common seals for companies and organizations. Meets all legal requirements.",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1c6a5b733-1765631453842.png",
+    image: "https://tiimg.tistatic.com/fp/1/003/652/common-seal-stamp-471.jpg",
     alt: "Corporate common seal with company logo creating official impression on legal document",
     features: ["Legal Compliant", "Professional Design", "High Quality"],
     popular: false
