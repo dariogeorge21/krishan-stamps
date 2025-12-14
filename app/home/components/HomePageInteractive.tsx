@@ -25,7 +25,7 @@ const HomepageInteractive = () => {
   return (
     <>
       <Header />
-      <main className="pt-20 lg:pt-[140px]">
+      <main className="pt-20 lg:pt-[180px]">
         <HeroSection onQuoteClick={handleQuoteClick} />
         <StatsCounter />
         <FeaturedProducts />
