@@ -21,28 +21,28 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
     title: "Making Your Mark Matter",
     subtitle: "Professional Stamp Solutions Since 1990",
     description: "Transform your business identity with precision-crafted stamps, seals, and plates. Same-day service available for urgent needs.",
-    image: "/images/image4.jpeg",
+    image: "https://stampvala.com/wp-content/uploads/2022/05/Colop-Printer-R40.webp",
     alt: "Close-up of professional rubber stamp being pressed on official document with blue ink pad"
   },
   {
     title: "25+ Years of Precision",
     subtitle: "Trusted by 5000+ Businesses",
     description: "From small enterprises to corporate giants, we deliver quality stamping solutions that stand the test of time.",
-    image: "/images/image5.jpeg",
+    image: "https://www.stampsonclick.com/uploads/product_image/29-06-2017_colop10.jpg",
     alt: "Artisan craftsman carefully engraving custom stamp design on wooden workbench with precision tools"
   },
   {
     title: "Quickest Solutions",
     subtitle: "Speed Without Compromise",
     description: "Need it today? We offer the quickest response within 2 hours for select products without sacrificing quality.",
-    image: "/images/image20.jpeg",
+    image: "https://www.shivanienterprises.com/wp-content/uploads/2023/10/Self-Ink-Stamp.jpg",
     alt: "Modern stamp manufacturing workspace with organized tools and completed custom stamps ready for delivery"
   },
   {
     title: "Quality You Can Trust",
     subtitle: "Certified and Guaranteed",
     description: "Our stamps are made with the highest quality materials and craftsmanship, ensuring they last for years to come.",
-    image: "/images/image7.jpeg",
+    image: "https://cdn.simplystamps.com/media/catalog/product/t/r/trodat-round-stamps.jpg",
     alt: "Close-up of high-quality custom stamp with intricate design and clear imprint"
   },
   {
@@ -63,7 +63,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
     title: "Custom Solutions",
     subtitle: "Tailored Stamps for Every Need",
     description: "From rubber stamps to embossing seals, we customize each product to meet your specific requirements.",
-    image: "/images/image16.jpeg",
+    image: "https://m.media-amazon.com/images/I/71iSS1q-7VL._AC_UF1000,1000_QL80_.jpg",
     alt: "Variety of custom rubber stamps and embossing seals displayed on wooden table"
   }
 ];
@@ -120,7 +120,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
               src={slide.image}
               alt={slide.alt}
               fill
-              className="object-cover"
+              className="object-contain"
               priority={index === 0}
             />
 
@@ -165,11 +165,21 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
             </button>
             
             <a
-              href="tel:+911234567890"
+              href="tel:+919899259454"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary-foreground text-primary font-body font-bold text-base rounded-md shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
               <Phone size={20} className="mr-2" />
-              Call Now: +91-12345-67890
+              Call Now: +91 98992 59454
+            </a>
+
+            <a
+              href="https://wa.me/919899259454?text=I'm%20interested%20in%20your%20stamp%20services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 bg-success text-success-foreground font-body font-bold text-base rounded-md shadow-lg hover:bg-success/90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+
+              <Phone size={20} className="mr-2" />
+              WhatsApp
             </a>
           </div>
 
