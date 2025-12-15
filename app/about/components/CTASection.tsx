@@ -29,11 +29,15 @@ const CTASection = () => {
             </Link>
 
             <a
-              href="tel:+911234567890"
+              href="tel:+919899259454"
               className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-primary font-body font-semibold rounded-lg shadow-xl hover:bg-white/90 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300"
             >
               <Phone size={20} />
-              <span>Call Now: +91-12345-67890</span>
+              <span>Call Now: +91-98992-59454</span>
+            </a>
+            <a href="https://wa.me/919899259454" className="inline-flex items-center space-x-2 px-8 py-4 bg-success text-success-foreground font-body font-semibold rounded-lg shadow-xl hover:bg-success/90 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300"
+              target="_blank" rel="noopener noreferrer">
+              <span>WhatsApp Us</span>
             </a>
           </div>
 
