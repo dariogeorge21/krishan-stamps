@@ -1,4 +1,5 @@
 import { CheckCircle } from 'lucide-react';
+import Link from 'next/link';
 
 interface ServiceCardProps {
   icon: string;
@@ -44,9 +45,12 @@ export default function ServiceCard({ icon, title, description, features, highli
         </ul>
 
         {/* CTA */}
-        <button className={`w-full py-3 px-6 rounded-md font-cta font-bold text-sm transition-all duration-300 ${highlighted ? 'bg-accent text-accent-foreground hover:bg-accent/90 shadow-md hover:shadow-lg' : 'bg-primary text-primary-foreground hover:bg-primary/90'}`}>
-          Learn More
-        </button>
+        <Link
+          href="/contact"
+          className={`inline-block w-full py-3 px-6 rounded-md font-cta font-bold text-sm transition-all duration-300 text-center ${highlighted ? 'bg-accent text-accent-foreground hover:bg-accent/90 shadow-md hover:shadow-lg' : 'bg-primary text-primary-foreground hover:bg-primary/90'}`}
+        >
+          Contact Now
+        </Link>
       </div>
     </div>
   );
