@@ -18,10 +18,10 @@ const CompanyStory = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <h3 className="font-headline font-bold text-2xl text-text-primary">
-                The Beginning (2012)
+                The Beginning
               </h3>
               <p className="font-body text-text-secondary leading-relaxed">
-                Krishan Stamps Maker was founded in 2012 with a simple vision: to provide businesses in Delhi NCR with high-quality, reliable stamping solutions that reflect their professional identity. What started as a small workshop in East Delhi has grown into a trusted name in the custom stamping industry.
+                Krishan Stamps Maker was founded in 1990&apos;s with a simple vision: to provide businesses in Delhi NCR with high-quality, reliable stamping solutions that reflect their professional identity. What started as a small workshop in East Delhi has grown into a trusted name in the custom stamping industry.
               </p>
             </div>
 
@@ -39,7 +39,7 @@ const CompanyStory = () => {
                 Today and Beyond
               </h3>
               <p className="font-body text-text-secondary leading-relaxed">
-                Over 12 years later, we've served more than 5,000 satisfied customers across Delhi NCR. Our commitment to quality, personalized service, and community engagement has made us the go-to choice for businesses of all sizes. We continue to evolve, adopting new technologies while maintaining the artisanal quality that defines our brand.
+                Over 30 years later, we've served more than 5,000 satisfied customers across Delhi NCR. Our commitment to quality, personalized service, and community engagement has made us the go-to choice for businesses of all sizes. We continue to evolve, adopting new technologies while maintaining the artisanal quality that defines our brand.
               </p>
             </div>
 
@@ -62,17 +62,17 @@ const CompanyStory = () => {
           <div className="space-y-6">
             <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[3/4]">
               <Image
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_1d6a63d93-1765307814241.png"
+                src="https://images.jdmagicbox.com/v2/comp/delhi/u8/011pxx11.xx11.190715182533.d8u8/catalogue/krishna-stamp-maker-nirman-vihar-delhi-stamp-paper-dealers-ssypb3f8wb.jpg"
                 alt="Traditional stamp making workshop with vintage equipment and modern tools side by side showing evolution of craftsmanship"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
-            <div className="bg-gradient-to-br from-primary to-secondary text-primary-foreground rounded-xl p-6 shadow-lg">
+            <div className="bg-gradient-to-br from-primary to-slate-500 text-primary-foreground rounded-xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
                 <Lightbulb size={32} className="flex-shrink-0 fill-current" />
                 <div>
-                  <h4 className="font-headline font-bold text-xl mb-2">Our Mission</h4>
+                  <h4 className="font-headline font-bold text-xl mb-2 text-white">Our Mission</h4>
                   <p className="font-body text-sm opacity-90">
                     To be the most trusted stamping solution provider in Delhi NCR by delivering exceptional quality, personalized service, and innovative solutions that help businesses make their mark matter.
                   </p>

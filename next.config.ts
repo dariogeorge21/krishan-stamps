@@ -47,8 +47,16 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'i.shgcdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.google.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.jdmagicbox.com',
       }
-      
+
     ],
   },
 };
