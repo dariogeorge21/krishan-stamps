@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Phone, Menu, X, Star, Clock, Zap, ShieldCheck, Mail, MapPin, ChevronRight } from "lucide-react";
 
@@ -91,34 +92,15 @@ const Header = () => {
           <div className="flex items-center justify-between h-20 px-4 lg:px-8">
             {/* Logo Section */}
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="relative w-14 h-14 flex items-center justify-center bg-gradient-to-br from-primary to-primary/80 rounded-xl shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
-                <div className="absolute inset-0 bg-white/10 rounded-xl" />
-                <svg
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 relative z-10"
-                >
-                  <path
-                    d="M24 8L16 16H20V28H28V16H32L24 8Z"
-                    fill="currentColor"
-                    className="text-primary-foreground"
-                  />
-                  <rect
-                    x="12"
-                    y="32"
-                    width="24"
-                    height="4"
-                    rx="2"
-                    fill="currentColor"
-                    className="text-primary-foreground"
-                  />
-                  <path
-                    d="M14 38H34C35.1046 38 36 38.8954 36 40C36 41.1046 35.1046 42 34 42H14C12.8954 42 12 41.1046 12 40C12 38.8954 12.8954 38 14 38Z"
-                    fill="currentColor"
-                    className="text-accent"
-                  />
-                </svg>
+              <div className="relative w-14 h-14 flex items-center justify-center bg-gradient-to-br from-primary to-primary/80 rounded-xl shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl p-2">
+                <div className="absolute inset-0 bg-white " />
+                <Image
+                  src="/krishan-white.png"
+                  alt="Krishan Stamps Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain relative z-10"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-headline font-bold text-xl text-primary leading-tight group-hover:text-primary/90 transition-colors">

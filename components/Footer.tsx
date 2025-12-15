@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Star, ChevronRight, CheckCircle, MapPin, Phone, Mail } from 'lucide-react'
 
 const Footer = () => {
@@ -37,28 +38,14 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-accent rounded-md flex items-center justify-center">
-                <svg
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8"
-                >
-                  <path
-                    d="M24 8L16 16H20V28H28V16H32L24 8Z"
-                    fill="currentColor"
-                    className="text-accent-foreground"
-                  />
-                  <rect
-                    x="12"
-                    y="32"
-                    width="24"
-                    height="4"
-                    rx="2"
-                    fill="currentColor"
-                    className="text-accent-foreground"
-                  />
-                </svg>
+              <div className="w-12 h-12 bg-black rounded-md flex items-center justify-center p-1">
+                <Image
+                  src="/krishan-black.png"
+                  alt="Krishan Stamps Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <div className="font-headline font-bold text-xl">Krishan Stamps</div>
