@@ -106,7 +106,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
   }
 
   return (
-    <section className="relative h-[750px] lg:h-[700px] overflow-hidden">
+    <section className="relative h-[850px] lg:h-[700px] overflow-hidden">
       {/* Background Image Slider */}
       <div className="absolute inset-0">
         {heroSlides.map((slide, index) =>
