@@ -239,7 +239,7 @@ const Header = () => {
                 <Clock size={16} className="text-primary" />
               </div>
               <span className="font-body text-sm text-text-secondary group-hover:text-text-primary transition-colors">
-                <span className="font-bold text-text-primary">12+ Years</span> Experience
+                <span className="font-bold text-text-primary">25+ Years</span> Experience
               </span>
             </div>
             <div className="w-px h-5 bg-border/50" />
@@ -248,7 +248,7 @@ const Header = () => {
                 <Zap size={16} className="text-accent" />
               </div>
               <span className="font-body text-sm text-text-secondary group-hover:text-text-primary transition-colors">
-                <span className="font-bold text-text-primary">Quick </span>Services 
+                <span className="font-bold text-text-primary">Quick </span>Services
               </span>
             </div>
             <div className="w-px h-5 bg-border/50" />
