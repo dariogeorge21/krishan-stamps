@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Briefcase, AlertTriangle, Lightbulb, CheckCircle, ArrowRight } from 'lucide-react';
 
 interface SuccessStory {
@@ -8,49 +7,33 @@ interface SuccessStory {
   challenge: string;
   solution: string;
   result: string;
-  beforeImage: string;
-  beforeAlt: string;
-  afterImage: string;
-  afterAlt: string;
 }
 
 const SuccessStories = () => {
   const stories: SuccessStory[] = [
   {
-    title: 'Corporate Rebranding Success',
-    client: 'TechCorp Solutions',
-    category: 'Bulk Corporate Order',
-    challenge: 'Needed 500+ stamps across 15 offices with new branding within 2 weeks',
-    solution: 'Coordinated bulk production with quality consistency and phased delivery',
-    result: 'Delivered all stamps on time with 100% brand consistency across locations',
-    beforeImage: "https://img.rocket.new/generatedImages/rocket_gen_img_177edc861-1764769947353.png",
-    beforeAlt: 'Old worn-out rubber stamp with faded company logo on wooden desk',
-    afterImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1a571eaff-1765302422516.png",
-    afterAlt: 'New professional self-inking stamp with crisp modern company logo and clear impression'
+    title: 'Quick Turnaround for Startup',
+    client: 'Local Retail Shop Owner',
+    category: 'Same-Day Stamp',
+    challenge: 'Needed custom shop stamp urgently for inventory marking before the next business day',
+    solution: 'Custom designed and delivered the stamp within 3 hours at our workshop',
+    result: 'Shop owner got their stamp ready and started using it the same day without any delay'
   },
   {
-    title: 'Medical Practice Excellence',
-    client: 'Dr. Anjali Mehta Clinic',
-    category: 'Custom Professional Stamp',
-    challenge: 'Required unique stamp design reflecting medical professionalism and personal brand',
-    solution: 'Custom design consultation with multiple iterations and premium materials',
-    result: 'Created distinctive stamp that enhanced professional image and patient trust',
-    beforeImage: "https://img.rocket.new/generatedImages/rocket_gen_img_166647e7a-1764667686056.png",
-    beforeAlt: 'Generic basic rubber stamp with simple text on medical prescription pad',
-    afterImage: "https://img.rocket.new/generatedImages/rocket_gen_img_11f17e459-1765631454300.png",
-    afterAlt: 'Elegant custom medical stamp with professional logo and detailed information on prescription'
+    title: 'Bulk Order for Small Business',
+    client: 'Office Supplies Distributor',
+    category: 'Bulk Order',
+    challenge: 'Required 50 customized company stamps for their clients with consistent quality',
+    solution: 'Organized production schedule and ensured perfect consistency across all stamps',
+    result: 'All stamps delivered on time with excellent quality, distributor became a regular customer'
   },
   {
-    title: 'Legal Firm Upgrade',
-    client: 'Verma & Associates',
-    category: 'Premium Embossing Seal',
-    challenge: 'Needed high-quality embossing seal for official legal documents',
-    solution: 'Premium brass embossing seal with intricate design and perfect alignment',
-    result: 'Enhanced document authenticity and firm prestige with professional seal',
-    beforeImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1a571eaff-1765302422516.png",
-    beforeAlt: 'Standard rubber stamp impression on legal document lacking official appearance',
-    afterImage: "https://img.rocket.new/generatedImages/rocket_gen_img_12290c094-1765355656487.png",
-    afterAlt: 'Raised embossed seal impression on legal document showing professional quality and authenticity'
+    title: 'Professional Seal for Certificates',
+    client: 'Training Institute',
+    category: 'Custom Embossing Seal',
+    challenge: 'Needed an embossing seal for their certificates to add authenticity',
+    solution: 'Created a custom embossing seal with their logo and institute name',
+    result: 'Certificates now look official and professional, enhancing the value of training programs'
   }];
 
 
@@ -72,37 +55,7 @@ const SuccessStories = () => {
             key={index}
             className="bg-surface rounded-2xl overflow-hidden shadow-lg">
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                {/* Before/After Images */}
-                <div className="relative">
-                  <div className="grid grid-cols-2 h-full">
-                    <div className="relative h-64 lg:h-full">
-                      <Image
-                        src={story.beforeImage}
-                        alt={story.beforeAlt}
-                        fill
-                        className="object-cover"
-                      />
-                      <div className="absolute top-4 left-4 bg-text-primary/80 text-white px-3 py-1 rounded-full">
-                        <span className="font-body text-xs font-semibold">Before</span>
-                      </div>
-                    </div>
-                    <div className="relative h-64 lg:h-full">
-                      <Image
-                        src={story.afterImage}
-                        alt={story.afterAlt}
-                        fill
-                        className="object-cover"
-                      />
-                      <div className="absolute top-4 right-4 bg-success text-success-foreground px-3 py-1 rounded-full">
-                        <span className="font-body text-xs font-semibold">After</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-8 md:p-12">
+              <div className="p-8 md:p-12">
                   <div className="inline-flex items-center space-x-2 px-3 py-1 bg-primary/10 rounded-full mb-4">
                     <Briefcase size={16} className="text-primary" />
                     <span className="font-body text-xs font-semibold text-primary">
@@ -146,7 +99,6 @@ const SuccessStories = () => {
                       <p className="font-body text-sm text-text-secondary leading-relaxed pl-7">
                         {story.result}
                       </p>
-                    </div>
                   </div>
                 </div>
               </div>
