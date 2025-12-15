@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { FileText, CheckCircle, AlertCircle, Send, Info, AlertTriangle } from 'lucide-react';
+import { FileText, CheckCircle, AlertCircle, Send, Info, AlertTriangle, MessageCircle } from 'lucide-react';
 
 interface FormData {
   fullName: string;
@@ -120,11 +120,35 @@ export default function QuoteRequestForm() {
     setSubmitStatus('idle');
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Format the message with all form data
+      const urgencyLabel = urgencyOptions.find(opt => opt.value === formData.urgency)?.label || formData.urgency;
       
-      console.log('Form submitted:', formData);
-      
+      const message = `*New Quote Request from Krishan Stamps Website*
+
+*Customer Details:*
+Name: ${formData.fullName}
+Email: ${formData.email}
+Phone: +91-${formData.phone}
+
+*Order Details:*
+Product Type: ${formData.productType}
+Quantity: ${formData.quantity}
+Service Urgency: ${urgencyLabel}
+
+*Requirements:*
+${formData.message}
+
+---
+Submitted via: Website Quote Form`;
+
+      // Encode the message for URL
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/919899259454?text=${encodedMessage}`;
+
+      // Show success message
       setSubmitStatus('success');
+
+      // Reset form
       setFormData({
         fullName: '',
         email: '',
@@ -135,10 +159,17 @@ export default function QuoteRequestForm() {
         message: ''
       });
       setErrors({});
-      
+
+      // Open WhatsApp in new tab after a brief delay
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        setSubmitStatus('idle');
+      }, 1500);
+
+      // Auto-clear success message after 5 seconds
       setTimeout(() => {
         setSubmitStatus('idle');
-      }, 5000);
+      }, 8000);
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
@@ -199,9 +230,9 @@ export default function QuoteRequestForm() {
         <div className="mb-6 p-4 bg-destructive/10 border border-destructive/30 rounded-lg flex items-start space-x-3">
           <AlertCircle size={24} className="text-destructive flex-shrink-0" />
           <div>
-            <p className="font-cta text-sm font-bold text-destructive">Submission Failed</p>
+            <p className="font-cta text-sm font-bold text-destructive">Error Opening WhatsApp</p>
             <p className="font-body text-sm text-text-secondary mt-1">
-              Please try again or contact us directly at +91-98765-43210
+              Please make sure you have an internet connection or try contacting us directly at +91-98992-59454
             </p>
           </div>
         </div>
@@ -397,15 +428,17 @@ export default function QuoteRequestForm() {
         </div>
 
         <div className="pt-4">
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full flex items-center justify-center space-x-2 px-8 py-4 bg-accent text-accent-foreground font-cta font-bold text-base rounded-lg shadow-md hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
-          >
-            <span>{isSubmitting ? 'Submitting...' : 'Request Quote'}</span>
-            <Send size={20} />
-          </button>
-          
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 mb-4">
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="flex items-center justify-center space-x-2 px-8 py-4 bg-accent text-accent-foreground font-cta font-bold text-base rounded-lg shadow-md hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+            >
+              <span>{isSubmitting ? 'Sending...' : 'Send via WhatsApp'}</span>
+              <MessageCircle size={20} />
+            </button>
+          </div>
+
           <p className="mt-4 font-body text-xs text-center text-text-secondary">
             By submitting this form, you agree to our terms of service and privacy policy
           </p>
@@ -420,7 +453,7 @@ export default function QuoteRequestForm() {
               Quick Response Guarantee
             </p>
             <p className="font-body text-xs text-text-secondary leading-relaxed">
-              We respond to all quote requests within 2 hours during business hours (Mon-Sat, 9 AM - 8 PM IST). For urgent requirements, please call us directly at +91-98765-43210.
+              We respond to all quote requests within 2 hours during business hours (Mon-Sat, 10 AM - 8 PM IST). For urgent requirements, you can also reach us via WhatsApp for instant response.
             </p>
           </div>
         </div>
