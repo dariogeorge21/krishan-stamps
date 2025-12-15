@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Testimonial {
@@ -11,8 +10,6 @@ interface Testimonial {
   company: string;
   rating: number;
   text: string;
-  image: string;
-  alt: string;
   date: string;
 }
 
@@ -22,68 +19,56 @@ const TestimonialsHub = () => {
   const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Priya Sharma',
-    role: 'Business Owner',
-    company: 'Sharma Enterprises',
+    name: 'Raj Patel',
+    role: 'Shop Owner',
+    company: 'Local Retail Store',
     rating: 5,
-    text: 'Krishan Stamps has been our go-to for all stamping needs for the past 5 years. Their quality is unmatched, and the same-day service has saved us multiple times during urgent situations. Highly recommended!',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_124bbe54a-1763295891998.png",
-    alt: 'Professional Indian woman in business attire with confident smile in modern office setting',
+    text: 'Been using Krishan Stamps for 3 years now. Quick turnaround, good quality, and reasonable prices. They sorted out my inventory stamp on the same day I needed it. Great service!',
     date: 'November 2024'
   },
   {
     id: 2,
-    name: 'Rajesh Kumar',
-    role: 'Procurement Manager',
-    company: 'TechCorp Solutions',
+    name: 'Meera Singh',
+    role: 'Office Manager',
+    company: 'Small Finance Office',
     rating: 5,
-    text: 'We order stamps in bulk for our multiple offices, and Krishan Stamps consistently delivers on time with perfect quality. Their team understands corporate requirements and provides excellent support.',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_102f196d8-1763296707783.png",
-    alt: 'Middle-aged Indian businessman in formal suit with glasses reviewing documents in corporate office',
+    text: 'We needed 20 custom stamps for our office. They completed the order on time with perfect quality. The team was friendly and easy to work with. Recommended to colleagues!',
     date: 'October 2024'
   },
   {
     id: 3,
-    name: 'Dr. Anjali Mehta',
-    role: 'Medical Practitioner',
-    company: 'Mehta Clinic',
+    name: 'Vikram Kumar',
+    role: 'Store Manager',
+    company: 'Clothing Boutique',
     rating: 5,
-    text: 'The custom design service is exceptional. They helped me create a professional stamp that perfectly represents my practice. The attention to detail and personalized consultation made all the difference.',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_14ed39e6a-1765122859411.png",
-    alt: 'Female doctor in white coat with stethoscope smiling warmly in medical clinic environment',
+    text: 'Got our shop stamp made here. Simple process, good quality, and the price was fair. They understood exactly what we needed. Will definitely order again.',
     date: 'September 2024'
   },
   {
     id: 4,
-    name: 'Amit Verma',
-    role: 'Legal Consultant',
-    company: 'Verma & Associates',
+    name: 'Priya Verma',
+    role: 'Accountant',
+    company: 'Small Accounting Firm',
     rating: 5,
-    text: 'Quality and precision are crucial in legal documentation. Krishan Stamps understands this perfectly. Their embossing seals are of premium quality, and the service is always professional and reliable.',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_18f5ee1cc-1763299173298.png",
-    alt: 'Professional Indian lawyer in formal attire with law books in traditional office setting',
+    text: 'Got a custom seal made for our documents. Very professional work. They made sure the design was exactly what we wanted. Good attention to detail.',
     date: 'August 2024'
   },
   {
     id: 5,
-    name: 'Neha Gupta',
-    role: 'Startup Founder',
-    company: 'InnovateTech',
+    name: 'Ashok Sharma',
+    role: 'Business Owner',
+    company: 'Import-Export Business',
     rating: 5,
-    text: 'As a startup, we needed quality stamps without breaking the bank. Krishan Stamps provided excellent products at competitive prices. Their team was patient with our design iterations and delivered exactly what we wanted.',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_14646b0d7-1763300433747.png",
-    alt: 'Young Indian entrepreneur woman in casual business wear with laptop in modern startup office',
+    text: 'Needed stamps for shipping documents urgently. They helped me out within a few hours. Been a loyal customer since then. Always reliable!',
     date: 'July 2024'
   },
   {
     id: 6,
-    name: 'Suresh Patel',
-    role: 'Administrative Head',
-    company: 'Delhi Public School',
+    name: 'Divya Nair',
+    role: 'Consultant',
+    company: 'Self-Employed',
     rating: 5,
-    text: 'We have been using their services for our school for over 8 years. From official seals to date stamps, everything is of top quality. Their understanding of institutional requirements is commendable.',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_12946c7bf-1763300744525.png",
-    alt: 'Senior Indian administrator in formal attire with warm smile in educational institution office',
+    text: 'Got my professional stamp designed here. The team gave me good suggestions and made it exactly as I wanted. Affordable and quick service. Very happy with the result.',
     date: 'June 2024'
   }];
 
@@ -111,20 +96,9 @@ const TestimonialsHub = () => {
         </div>
 
         {/* Featured Testimonial */}
-        <div className="max-w-5xl mx-auto mb-12">
+        <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-surface rounded-2xl shadow-xl overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
-              <div className="md:col-span-2 relative h-64 md:h-auto">
-                <Image
-                  src={currentTestimonial.image}
-                  alt={currentTestimonial.alt}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface/90 to-transparent" />
-              </div>
-
-              <div className="md:col-span-3 p-8 md:p-12">
+            <div className="p-8 md:p-12">
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(currentTestimonial.rating)].map((_, i) =>
                     <Star key={i} size={20} className="text-warning fill-current" />
@@ -161,13 +135,10 @@ const TestimonialsHub = () => {
                       aria-label="Next testimonial">
                       <ChevronRight size={20} />
                     </button>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Testimonial Indicators */}
+          </div>          {/* Testimonial Indicators */}
           <div className="flex items-center justify-center space-x-2 mt-6">
             {testimonials.map((_, index) =>
             <button
@@ -197,7 +168,7 @@ const TestimonialsHub = () => {
             <div className="font-body text-sm text-text-secondary">Satisfaction Rate</div>
           </div>
           <div className="bg-surface rounded-xl p-6 text-center shadow-md">
-            <div className="font-headline font-bold text-4xl text-primary mb-2">12+</div>
+            <div className="font-headline font-bold text-4xl text-primary mb-2">25+</div>
             <div className="font-body text-sm text-text-secondary">Years Trusted</div>
           </div>
         </div>
