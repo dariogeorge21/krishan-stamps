@@ -9,7 +9,7 @@ interface StatItem {
 
 const HeroSection = () => {
   const stats: StatItem[] = [
-    { icon: Clock, value: '12+', label: 'Years of Excellence' },
+    { icon: Clock, value: '25+', label: 'Years of Excellence' },
     { icon: Users, value: '5000+', label: 'Happy Customers' },
     { icon: Star, value: '4.8/5', label: 'Customer Rating' },
     { icon: Zap, value: 'Same Day', label: 'Service Available' }
@@ -24,11 +24,11 @@ const HeroSection = () => {
           <div className="space-y-6">
             <div className="inline-flex items-center space-x-2 px-4 py-2 bg-accent/10 rounded-full">
               <Sparkles size={20} className="text-accent fill-current" />
-              <span className="font-body font-semibold text-sm text-accent">Since 2012</span>
+              <span className="font-body font-semibold text-sm text-accent">Since 1990</span>
             </div>
             
             <h1 className="font-headline font-bold text-4xl md:text-5xl lg:text-6xl text-text-primary leading-tight">
-              Making Your Mark Matter for Over a Decade
+              Making Your Mark Matter for Over 3 Decades
             </h1>
             
             <p className="font-body text-lg text-text-secondary leading-relaxed">
@@ -55,7 +55,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
               <Image
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_119ced20e-1764654531912.png"
+                src="https://i.shgcdn.com/6fa6ee27-6862-4908-89d0-2402c81dbea2/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
                 alt="Professional craftsman carefully creating custom rubber stamp with precision tools in modern workshop"
                 fill
                 className="object-cover"
@@ -63,7 +63,7 @@ const HeroSection = () => {
             </div>
             <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground rounded-2xl p-6 shadow-xl">
               <div className="text-center">
-                <div className="font-headline font-bold text-4xl">12+</div>
+                <div className="font-headline font-bold text-4xl">25+</div>
                 <div className="font-body text-sm">Years Strong</div>
               </div>
             </div>
