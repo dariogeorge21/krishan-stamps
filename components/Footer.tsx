@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Star, ChevronRight, CheckCircle, MapPin, Phone, Mail, Globe, MessageSquare } from 'lucide-react'
+import { Star, ChevronRight, CheckCircle, MapPin, Phone, Mail } from 'lucide-react'
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState<number | null>(null);
@@ -12,10 +12,13 @@ const Footer = () => {
   }, []);
 
   const quickLinks = [
-    { label: 'Home', href: '/homepage' },
+    { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
     { label: 'Contact', href: '/contact' },
+    { label: 'Privacy Policy', href: '/privacy-policy' },
+    { label: 'Terms & Conditions', href: '/terms-conditions' },
+    { label: 'FAQs', href: '/faqs' },
   ];
 
   const services = [
@@ -63,7 +66,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="font-body text-sm opacity-80 leading-relaxed mb-4">
-              Making your mark matter since 2012. Quality stamping solutions for businesses across Delhi NCR.
+              Making your mark matter since 1990. Quality stamping solutions for businesses across Delhi NCR.
             </p>
             <div className="flex items-center space-x-2">
                 <Star size={16} className="text-warning fill-current" />
@@ -106,22 +109,27 @@ const Footer = () => {
           <div>
             <h3 className="font-headline font-bold text-lg mb-4">Contact Us</h3>
             <div className="space-y-3">
-              <div className="flex items-start space-x-3">
+              <a 
+                href="https://maps.app.goo.gl/KYC2xUJGVj7dDtLi9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-start space-x-3 hover:text-accent transition-colors"
+              >
                 <MapPin size={18} className="flex-shrink-0 mt-0.5" />
-                <div className="font-body text-sm opacity-80">
-                  Shop No. 123, Main Market<br />Shakarpur, East Delhi<br />Delhi - 110092
+                <div className="font-body text-sm opacity-80 hover:opacity-100">
+                  Shop No.17, Veer Savarkar Block,<br /> Shakarpur, Delhi-110092
                 </div>
-              </div>
+              </a>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="flex-shrink-0" />
-                <a href="tel:+911234567890" className="font-body text-sm opacity-80 hover:text-accent transition-colors">
-                  +91-12345-67890
+                <a href="tel:+919899259454" className="font-body text-sm opacity-80 hover:text-accent transition-colors">
+                  +91-98992-59454
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="flex-shrink-0" />
-                <a href="mailto:info@krishanstamps.com" className="font-body text-sm opacity-80 hover:text-accent transition-colors">
-                  info@krishanstamps.com
+                <a href="mailto:krishankumar651@yahoo.com" className="font-body text-sm opacity-80 hover:text-accent transition-colors">
+                  krishankumar651@yahoo.com
                 </a>
               </div>
             </div>
@@ -129,22 +137,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p className="font-body text-sm opacity-80 text-center md:text-left">
-              © {currentYear || '2024'} Krishan Stamps Professional. All rights reserved.
+        <div className="border-t border-white/10 pt-8 text-center">
+          <div className="space-y-4 md:space-y-0">
+            <p className="font-body text-sm opacity-80 text-center md:text-center">
+              © {currentYear || '2026'} Krishan Stamps Professional. All rights reserved.
             </p>
-            <div className="flex items-center space-x-4">
-              <span className="font-body text-sm opacity-80">Follow Us:</span>
-              <div className="flex items-center space-x-2">
-                <a href="#" className="w-8 h-8 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-colors">
-                  <Globe size={16} />
-                </a>
-                <a href="#" className="w-8 h-8 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-colors">
-                  <MessageSquare size={16} />
-                </a>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
