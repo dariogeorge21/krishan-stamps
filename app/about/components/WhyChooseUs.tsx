@@ -96,7 +96,7 @@ const WhyChooseUs = () => {
               key={index}
               className="bg-background rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-slate-400 rounded-xl flex items-center justify-center mb-4">
                 {React.createElement(prop.icon, { size: 32, className: 'text-white fill-current' })}
               </div>
 
@@ -123,10 +123,10 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-2xl p-8 md:p-12">
+        <div className="mt-12 bg-gradient-to-r from-primary to-slate-500 text-primary-foreground rounded-2xl p-8 md:p-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="font-headline font-bold text-3xl mb-4">
+              <h3 className="font-headline font-bold text-3xl mb-4 text-white">
                 Bridging Quality and Accessibility
               </h3>
               <p className="font-body text-lg opacity-90 leading-relaxed">
@@ -143,7 +143,7 @@ const WhyChooseUs = () => {
                 <div className="font-body text-sm opacity-90">Average Rating</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                <div className="font-headline font-bold text-4xl mb-2">12+</div>
+                <div className="font-headline font-bold text-4xl mb-2">25+</div>
                 <div className="font-body text-sm opacity-90">Years Experience</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
