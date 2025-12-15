@@ -11,6 +11,7 @@ import WhyChooseUs from './WhyChooseUs';
 import CTASection from './CTASection';
 import Footer from '@/components/Footer';
 import GallerySection from './GallerySection';
+import FloatingContactButtons from '@/components/FloatingContactButtons';
 
 const HomepageInteractive = () => {
   const [isQuoteFormOpen, setIsQuoteFormOpen] = useState(false);
@@ -35,6 +36,7 @@ const HomepageInteractive = () => {
         <TestimonialsSection />
         <CTASection />
       </main>
+      <FloatingContactButtons />
       <Footer />
       <QuickQuoteForm isOpen={isQuoteFormOpen} onClose={handleQuoteClose} />
     </>

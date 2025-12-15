@@ -11,6 +11,7 @@ import TimelineSection from './TimelineSection';
 import SuccessStories from './SuccessStories';
 import CTASection from './CTASection';
 import Footer from '@/components/Footer';
+import FloatingContactButtons from '@/components/FloatingContactButtons';
 
 export default function AboutInteractive() {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -55,6 +56,7 @@ export default function AboutInteractive() {
         <TestimonialsHub />
         <CTASection />
       </main>
+      <FloatingContactButtons />
       <Footer />
     </div>
   );

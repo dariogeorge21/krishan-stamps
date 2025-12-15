@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import ServicesInteractive from './components/ServicesInteractive';
 import Footer from '@/components/Footer';
+import FloatingContactButtons from '@/components/FloatingContactButtons';
 
 export const metadata: Metadata = {
   title: 'Services - Krishan Stamps Professional',
@@ -146,6 +147,7 @@ export default function ServicesPage() {
           brandPartners={brandPartners} />
 
       </main>
+      <FloatingContactButtons />
       <Footer />
     </>);
 

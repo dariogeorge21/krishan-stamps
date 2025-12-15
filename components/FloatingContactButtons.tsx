@@ -62,7 +62,7 @@ export default function FloatingContactButtons() {
       id: 'email',
       href: 'mailto:krishankumar651@yahoo.com?subject=Quote%20Request%20for%20Stamps&body=Hello%20Krishan%20Stamps%2C%20I%20am%20interested%20in%20your%20stamping%20services.',
       label: 'Email',
-      icon: <Mail size={28} className="fill-current" />,
+      icon: <Mail size={28} className="" />,
       bgColor: 'bg-secondary',
       textColor: 'text-secondary-foreground'
     }
