@@ -26,18 +26,24 @@ const CTASection = () => {
             </Link>
             
             <a
-              href="tel:+911234567890"
+              href="tel:+919899259454"
               className="inline-flex items-center px-8 py-4 bg-primary-foreground text-primary font-body font-bold text-base rounded-md shadow-xl hover:bg-primary-foreground/90 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             >
               <Phone size={20} className="mr-2" />
-              Call: +91-12345-67890
+              Call: +91 98992 59454
             </a>
+            <Link
+              href="/about"
+              className="inline-flex items-center px-8 py-4 bg-secondary text-secondary-foreground font-body font-bold text-base rounded-md shadow-xl hover:bg-secondary/90 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            >
+              Learn More
+            </Link>
           </div>
 
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8 border-t border-primary-foreground/20">
             <div className="text-center">
-              <div className="font-headline text-3xl font-bold mb-1">12+</div>
+              <div className="font-headline text-3xl font-bold mb-1">25+</div>
               <div className="font-body text-sm opacity-80">Years Experience</div>
             </div>
             <div className="text-center">
