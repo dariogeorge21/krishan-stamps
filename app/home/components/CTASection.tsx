@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FileText, Phone } from 'lucide-react';
+import { FileText, Phone, MessageCircleCode } from 'lucide-react';
 
 const CTASection = () => {
   return (
@@ -7,7 +7,7 @@ const CTASection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto text-center text-primary-foreground">
           {/* Main Heading */}
-          <h2 className="font-headline text-3xl lg:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="font-headline text-3xl lg:text-5xl font-bold  text-white mb-6 leading-tight">
             Ready to Make Your Mark?
           </h2>
           
@@ -32,12 +32,17 @@ const CTASection = () => {
               <Phone size={20} className="mr-2" />
               Call: +91 98992 59454
             </a>
-            <Link
-              href="/about"
-              className="inline-flex items-center px-8 py-4 bg-secondary text-secondary-foreground font-body font-bold text-base rounded-md shadow-xl hover:bg-secondary/90 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            
+            <a
+              href="https://wa.me/919899259454"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 bg-green-500 text-white font-body font-bold text-base rounded-md shadow-xl hover:bg-green-600 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             >
-              Learn More
-            </Link>
+              <MessageCircleCode size={20} className="mr-2" />
+              WhatsApp
+            </a>
+          
           </div>
 
           {/* Trust Indicators */}
