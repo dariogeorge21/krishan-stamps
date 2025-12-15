@@ -55,7 +55,31 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'images.jdmagicbox.com',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.licdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'akm-img-a-in.tosshub.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'etimg.etb2bimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'is1-ssl.mzstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'wpblogassets.paytm.com',
+      },
 
     ],
   },

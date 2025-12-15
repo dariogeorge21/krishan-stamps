@@ -9,7 +9,7 @@ import QuoteRequestForm from './QuoteRequestForm';
 import PaymentMethods from './PaymentMethods';
 import FAQSection from './FAQSection';
 import Footer from '@/components/Footer';
-import FloatingContactButtons from './FloatingContactButtons';
+import FloatingContactButtons from '../../../components/FloatingContactButtons';
 
 interface ContactMethod {
   icon: React.ComponentType<{ size: number; className: string }>;
@@ -37,53 +37,53 @@ export default function ContactInteractive() {
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91-98765-43210',
-    href: 'tel:+919876543210',
+    value: '+91-9899-259-454',
+    href: 'tel:+919899259454',
     description: 'Call us for immediate assistance',
-    available: 'Available Mon-Sat, 9 AM - 8 PM IST'
+    available: 'Available Mon-Sat, 10 AM - 8 PM IST'
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'info@krishanstamps.com',
-    href: 'mailto:info@krishanstamps.com',
+    value: 'krishankumar651@yahoo.com',
+    href: 'mailto:krishankumar651@yahoo.com',
     description: 'Send us your detailed requirements',
     available: 'Response within 2 hours'
   },
   {
     icon: MessageSquare,
     label: 'WhatsApp',
-    value: '+91-98765-43210',
-    href: 'https://wa.me/919876543210',
+    value: '+91-9899-259-454',
+    href: 'https://wa.me/919899259454',
     description: 'Quick chat for instant queries',
-    available: 'Available Mon-Sat, 9 AM - 8 PM IST'
+    available: 'Available Mon-Sat, 10 AM - 8 PM IST'
   },
   {
     icon: MapPin,
     label: 'Visit Us',
     value: 'Shakarpur, East Delhi',
-    href: 'https://www.google.com/maps/dir/?api=1&destination=28.6517,77.2865',
-    description: 'Shop No. 45, Main Market Road',
-    available: 'Open Mon-Sat, 9 AM - 8 PM IST'
+    href: 'https://maps.app.goo.gl/MFUYcYnLjm1D72tj9',
+    description: 'Shop No. 17, Shakarpur, Delhi-110092',
+    available: 'Open Mon-Sat, 10 AM - 8 PM IST'
   }];
 
 
   const paymentMethods: PaymentMethod[] = [
   {
     name: 'Cash',
-    icon: "https://img.rocket.new/generatedImages/rocket_gen_img_1f5b39561-1765263582381.png",
+    icon: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202405/recent-data-shows-551-rise-in-average-monthly-atm-cash-withdrawals-in-fy2024-015457953-3x4.jpg?VersionId=xVbKhLntinwbAeo8vBj77iSnZSN1ViXa",
     alt: 'Stack of Indian rupee currency notes on wooden surface',
     description: 'On Delivery'
   },
   {
     name: 'UPI',
-    icon: "https://img.rocket.new/generatedImages/rocket_gen_img_169e95c18-1765108881198.png",
+    icon: "https://etimg.etb2bimg.com/photo/72812716.cms",
     alt: 'Smartphone displaying UPI payment interface with QR code',
     description: 'Instant'
   },
   {
     name: 'Cards',
-    icon: "https://images.unsplash.com/photo-1621524239965-e56030a5379e",
+    icon: "https://wpblogassets.paytm.com/paytmblog/uploads/2022/01/row200_ATM_What-are-the-Types-of-ATM-Cards-800x500.png",
     alt: 'Credit and debit cards arranged on blue background',
     description: 'All Major'
   },
@@ -95,19 +95,19 @@ export default function ContactInteractive() {
   },
   {
     name: 'Paytm',
-    icon: "https://img.rocket.new/generatedImages/rocket_gen_img_177d031cd-1765552528277.png",
+    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/a6/de/9aa6decf-b3f9-cfc5-1380-419b04ab45c4/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/1200x630wa.png",
     alt: 'Mobile phone displaying Paytm digital wallet app',
     description: 'Wallet'
   },
   {
     name: 'Google Pay',
-    icon: "https://img.rocket.new/generatedImages/rocket_gen_img_1dc985682-1764635352004.png",
+    icon: "https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk",
     alt: 'Smartphone showing Google Pay payment confirmation screen',
     description: 'Quick Pay'
   },
   {
     name: 'PhonePe',
-    icon: "https://img.rocket.new/generatedImages/rocket_gen_img_130bf8169-1765591642341.png",
+    icon: "https://media.licdn.com/dms/image/v2/D560BAQHLOrShxWW33g/company-logo_200_200/company-logo_200_200/0/1732870614932/phonepe_internet_logo?e=2147483647&v=beta&t=ADpboFA5Osbqra1iZzn343_VA2mUGAblUQe2-gejglo",
     alt: 'Mobile device with PhonePe app open showing transaction history',
     description: 'Easy'
   },
@@ -122,11 +122,11 @@ export default function ContactInteractive() {
   const faqs: FAQ[] = [
   {
     question: 'What is your typical turnaround time for custom stamps?',
-    answer: 'Standard orders are completed within 3-5 business days. We offer express service (1-2 days) and same-day service for urgent requirements. Same-day service is available for orders placed before 12 PM and depends on design complexity.'
+    answer: 'Standard orders are completed within 2-3 business days. We offer express service (1-2 days) and same-day service for urgent requirements. Same-day service is available for orders placed before 12 PM and depends on design complexity.'
   },
   {
     question: 'Do you offer same-day stamp making service?',
-    answer: 'Yes! We provide same-day service for most standard stamp designs. Orders must be placed before 12 PM, and the design should not be overly complex. Additional charges apply for same-day service. Please call us at +91-98765-43210 to confirm availability.'
+    answer: 'Yes! We provide same-day service for most standard stamp designs. Orders are completed within 2-3 hours, and the design should not be overly complex. Additional charges apply for same-day service. Please call us at +91-98992-59454 to confirm availability.'
   },
   {
     question: 'What information do I need to provide for a custom stamp?',
@@ -138,7 +138,7 @@ export default function ContactInteractive() {
   },
   {
     question: 'What payment methods do you accept?',
-    answer: 'We accept all major payment methods including cash, UPI (Google Pay, PhonePe, Paytm), credit/debit cards, net banking, and NEFT/RTGS transfers. For custom orders, we typically require 50% advance payment, with the balance due on delivery or completion.'
+    answer: 'We accept all major payment methods including cash, UPI (Google Pay, PhonePe, Paytm), credit/debit cards, net banking, and NEFT/RTGS transfers. For custom orders, we typically require advance payment, with the balance due on delivery or completion.'
   },
   {
     question: 'Do you deliver stamps, or do I need to pick them up?',
@@ -146,7 +146,7 @@ export default function ContactInteractive() {
   },
   {
     question: 'What is your minimum order quantity?',
-    answer: 'We accept orders starting from a single stamp. There is no minimum order quantity. However, for bulk orders (10+ stamps), we offer special discounted pricing. Contact us for a custom quote on bulk orders.'
+    answer: 'We accept orders starting from a single stamp. There is no minimum order quantity. However, for bulk orders (10+ stamps), we need time to plan and execute the production process. Contact us for a custom quote on bulk orders.'
   },
   {
     question: 'Can you replicate an existing stamp design?',
@@ -181,7 +181,7 @@ export default function ContactInteractive() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-primary via-primary/95 to-secondary rounded-2xl p-8 lg:p-12 text-center shadow-xl">
+          <div className="bg-gradient-to-br from-primary via-primary/95 to-slate-500 rounded-2xl p-8 lg:p-12 text-center shadow-xl">
             <div className="max-w-3xl mx-auto">
               <h2 className="font-headline text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
                 Ready to Make Your Mark?
@@ -191,7 +191,7 @@ export default function ContactInteractive() {
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919899259454"
                   className="inline-flex items-center space-x-2 px-8 py-4 bg-accent text-accent-foreground font-cta font-bold text-base rounded-lg shadow-md hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
 
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -200,7 +200,7 @@ export default function ContactInteractive() {
                   <span>Call Now</span>
                 </a>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919899259454?text=I'm%20interested%20in%20your%20stamp%20services"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 px-8 py-4 bg-[#25D366] text-white font-cta font-bold text-base rounded-lg shadow-md hover:bg-[#20BD5A] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
