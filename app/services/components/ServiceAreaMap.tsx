@@ -98,11 +98,11 @@ export default function ServiceAreaMap({ areas }: ServiceAreaMapProps) {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center">
                     <span className="font-body text-sm text-text-secondary">Monday - Saturday</span>
-                    <span className="font-body text-sm font-semibold text-text-primary">9:00 AM - 8:00 PM</span>
+                    <span className="font-body text-sm font-semibold text-text-primary">10:00 AM - 8:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-body text-sm text-text-secondary">Sunday</span>
-                    <span className="font-body text-sm font-semibold text-text-primary">10:00 AM - 6:00 PM</span>
+                    <span className="font-body text-sm font-semibold text-destructive">Closed</span>
                   </div>
                 </div>
               </div>
