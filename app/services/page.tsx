@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import ServicesInteractive from './components/ServicesInteractive';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Services - Krishan Stamps Professional',
@@ -38,7 +39,7 @@ export default function ServicesPage() {
     'Quality consistency guarantee',
     'Flexible payment terms'],
 
-    highlighted: true
+    highlighted: false
   },
   {
     icon: 'BoltIcon',
@@ -73,7 +74,7 @@ export default function ServicesPage() {
     number: '1',
     title: 'Consultation',
     description: 'Share your requirements and get expert recommendations',
-    icon: 'ChatBubbleLeftRightIcon'
+    icon: 'Phone'
   },
   {
     number: '2',
@@ -85,7 +86,7 @@ export default function ServicesPage() {
     number: '3',
     title: 'Production',
     description: 'We craft your stamp with precision and care',
-    icon: 'WrenchScrewdriverIcon'
+    icon: 'WrenchIcon'
   },
   {
     number: '4',
@@ -109,25 +110,25 @@ export default function ServicesPage() {
   const brandPartners = [
   {
     name: 'Trodat',
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_112fe8dc5-1765631453076.png",
+    logo: "https://www.trodat.net/fileadmin/_processed_/9/2/csm_printy4911_002cccc131.png",
     alt: 'Trodat logo - premium self-inking stamp manufacturer with red and white branding',
     description: 'Austrian precision engineering'
   },
   {
     name: 'Dura',
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1b6007be6-1765631453742.png",
+    logo: "https://5.imimg.com/data5/SELLER/Default/2023/1/CN/MN/JN/2020833/dura-stamp-for-office.jpg",
     alt: 'Dura logo - reliable stamp manufacturing brand with blue corporate identity',
     description: 'Durable quality solutions'
   },
   {
     name: 'Sun',
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1f462a613-1765631455938.png",
+    logo: "https://m.media-amazon.com/images/I/31Y5bSfSztL.jpg",
     alt: 'Sun logo - trusted stamp brand with yellow and orange sun symbol',
     description: 'Trusted Indian brand'
   },
   {
     name: 'Colop',
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_154f20177-1764661576649.png",
+    logo: "https://4.imimg.com/data4/BJ/DH/ANDROID-4113541/product-500x500.jpeg",
     alt: 'Colop logo - innovative stamp technology company with modern blue design',
     description: 'Innovative stamp technology'
   }];
@@ -145,6 +146,7 @@ export default function ServicesPage() {
           brandPartners={brandPartners} />
 
       </main>
+      <Footer />
     </>);
 
 }

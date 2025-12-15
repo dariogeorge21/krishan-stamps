@@ -80,7 +80,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'wpblogassets.paytm.com',
       },
-
+      {
+        protocol: 'https',
+        hostname: 'www.trodat.net',
+      },
     ],
   },
 };
