@@ -36,26 +36,93 @@ export default function QuoteRequestForm() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+  const validateForm = (): boolean => {
+    return (
+      formData.name.trim() !== '' &&
+      formData.email.trim() !== '' &&
+      formData.phone.trim() !== '' &&
+      formData.service !== '' &&
+      formData.urgency !== ''
+    );
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setSubmitStatus('success');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: '',
-      quantity: '',
-      urgency: 'standard',
-      message: ''
-    });
+    if (!validateForm()) {
+      alert('Please fill in all required fields');
+      return;
+    }
 
-    setTimeout(() => setSubmitStatus('idle'), 5000);
+    setIsSubmitting(true);
+
+    try {
+      // Format the message with all form data
+      const serviceLabel = {
+        'custom-design': 'Custom Design Consultation',
+        'bulk-order': 'Bulk Order Solutions',
+        'express-service': 'Same-Day/Express Service',
+        'printing': 'General Printing Solutions'
+      }[formData.service] || formData.service;
+
+      const urgencyLabel = {
+        'standard': 'Standard (3-5 days)',
+        'express': 'Express (1-2 days)',
+        'same-day': 'Same Day'
+      }[formData.urgency] || formData.urgency;
+
+      const message = `*New Quote Request from Krishan Stamps Website*
+
+*Customer Details:*
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+*Order Details:*
+Service Type: ${serviceLabel}
+Quantity: ${formData.quantity || 'Not specified'}
+Urgency: ${urgencyLabel}
+
+*Additional Details:*
+${formData.message || 'No additional details'}
+
+---
+Submitted via: Services Quote Form`;
+
+      // Encode the message for URL
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/919899259454?text=${encodedMessage}`;
+
+      // Show success message
+      setSubmitStatus('success');
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        quantity: '',
+        urgency: 'standard',
+        message: ''
+      });
+
+      // Open WhatsApp in new tab after a brief delay
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        setSubmitStatus('idle');
+      }, 1500);
+
+      // Auto-clear success message after 8 seconds
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 8000);
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('Error opening WhatsApp. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isHydrated) {
@@ -88,8 +155,8 @@ export default function QuoteRequestForm() {
               <div className="mb-6 p-4 bg-success/10 border border-success/20 rounded-lg flex items-start space-x-3">
                 <CheckCircle size={24} className="text-success flex-shrink-0" />
                 <div>
-                  <p className="font-body font-semibold text-success mb-1">Quote Request Submitted!</p>
-                  <p className="font-body text-sm text-text-secondary">We'll get back to you within 24 hours with a detailed quote.</p>
+                  <p className="font-body font-semibold text-success mb-1">Quote Request Sent Successfully!</p>
+                  <p className="font-body text-sm text-text-secondary">Your message is being sent to WhatsApp. Opening chat window now. Our team will respond within 24 hours.</p>
                 </div>
               </div>
             )}
@@ -233,12 +300,12 @@ export default function QuoteRequestForm() {
                   {isSubmitting ? (
                     <>
                       <Loader2 size={20} className="animate-spin" />
-                      <span>Submitting...</span>
+                      <span>Sending...</span>
                     </>
                   ) : (
                     <>
-                      <Send size={20} />
-                      <span>Submit Request</span>
+                      <MessageCircle size={20} />
+                      <span>Send via WhatsApp</span>
                     </>
                   )}
                 </button>
@@ -249,21 +316,21 @@ export default function QuoteRequestForm() {
           {/* Contact Alternatives */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
             <a
-              href="tel:+911234567890"
+              href="tel:+919899259454"
               className="flex items-center justify-center space-x-3 p-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300"
             >
               <Phone size={20} />
               <span className="font-body font-semibold text-sm">Call Now</span>
             </a>
             <a
-              href="mailto:info@krishanstamps.com"
+              href="mailto:krishankumar651@yahoo.com?subject=Quote%20Request&body=Hello%20Krishan%20Stamps%2C%20I%20am%20interested%20in%20your%20services."
               className="flex items-center justify-center space-x-3 p-4 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-all duration-300"
             >
               <Mail size={20} />
               <span className="font-body font-semibold text-sm">Email Us</span>
             </a>
             <a
-              href="https://wa.me/911234567890"
+              href="https://wa.me/919899259454?text=Hi%20Krishan%20Stamps%2C%20I%20am%20interested%20in%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-3 p-4 bg-success text-success-foreground rounded-lg hover:bg-success/90 transition-all duration-300"
