@@ -96,14 +96,14 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
             </p>
             <div className="flex flex-wrap gap-3">
               <a
-                href="tel:+919876543210"
+                href="tel:+919899259454"
                 className="inline-flex items-center space-x-2 px-4 py-2 bg-primary text-primary-foreground font-cta font-bold text-xs rounded-md hover:bg-primary/90 transition-all duration-300"
               >
                 <Phone size={16} className="fill-current" />
                 <span>Call Us</span>
               </a>
               <a
-                href="mailto:info@krishanstamps.com"
+                href="mailto:krishankumar651@yahoo.com"
                 className="inline-flex items-center space-x-2 px-4 py-2 bg-accent text-accent-foreground font-cta font-bold text-xs rounded-md hover:bg-accent/90 transition-all duration-300"
               >
                 <Mail size={16} className="fill-current" />
