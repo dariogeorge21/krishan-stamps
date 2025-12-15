@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
-import HeroSection from './components/HeroSection';
-import CompanyStory from './components/CompanyStory';
-import TeamSection from './components/TeamSection';
-import WhyChooseUs from './components/WhyChooseUs';
-import TestimonialsHub from './components/TestimonialsHub';
-import TimelineSection from './components/TimelineSection';
-import SuccessStories from './components/SuccessStories';
-import CTASection from './components/CTASection';
+import HeroSection from './HeroSection';
+import CompanyStory from './CompanyStory';
+import TeamSection from './TeamSection';
+import WhyChooseUs from './WhyChooseUs';
+import TestimonialsHub from './TestimonialsHub';
+import TimelineSection from './TimelineSection';
+import SuccessStories from './SuccessStories';
+import CTASection from './CTASection';
 import Footer from '@/components/Footer';
 
 export default function AboutInteractive() {

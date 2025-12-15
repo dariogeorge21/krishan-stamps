@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import AboutInteractive from './AboutInteractive';
+import AboutInteractive from './components/AboutInteractive';
 
 export const metadata: Metadata = {
   title: 'About Us - Krishan Stamps Professional',
