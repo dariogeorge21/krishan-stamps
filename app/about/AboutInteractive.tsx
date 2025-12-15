@@ -6,10 +6,8 @@ import HeroSection from './components/HeroSection';
 import CompanyStory from './components/CompanyStory';
 import TeamSection from './components/TeamSection';
 import WhyChooseUs from './components/WhyChooseUs';
-import QualityCommitment from './components/QualityCommitment';
 import TestimonialsHub from './components/TestimonialsHub';
 import TimelineSection from './components/TimelineSection';
-import ProcessVideo from './components/ProcessVideo';
 import SuccessStories from './components/SuccessStories';
 import CTASection from './components/CTASection';
 import Footer from '@/components/Footer';
@@ -51,8 +49,8 @@ export default function AboutInteractive() {
         <TimelineSection />
         <TeamSection />
         <WhyChooseUs />
-        <QualityCommitment />
-        <ProcessVideo />
+  
+        
         <SuccessStories />
         <TestimonialsHub />
         <CTASection />
