@@ -10,6 +10,7 @@ import TestimonialsSection from './TestimonialsSection';
 import WhyChooseUs from './WhyChooseUs';
 import CTASection from './CTASection';
 import Footer from '@/components/Footer';
+import GallerySection from './GallerySection';
 
 const HomepageInteractive = () => {
   const [isQuoteFormOpen, setIsQuoteFormOpen] = useState(false);
@@ -27,6 +28,7 @@ const HomepageInteractive = () => {
       <Header />
       <main className="pt-20 lg:pt-[180px]">
         <HeroSection onQuoteClick={handleQuoteClick} />
+        <GallerySection />
         <StatsCounter />
         <FeaturedProducts />
         <WhyChooseUs />
