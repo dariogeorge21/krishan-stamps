@@ -1,7 +1,7 @@
 export default function LocationMap() {
   return (
     <div className="bg-surface rounded-xl shadow-lg overflow-hidden border border-border">
-      <div className="bg-gradient-to-r from-primary to-secondary p-6">
+      <div className="bg-gradient-to-r from-primary to-slate-500 p-6">
         <div className="flex items-center space-x-3">
           <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
             <svg className="w-6 h-6 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -27,8 +27,9 @@ export default function LocationMap() {
           loading="lazy"
           title="Krishan Stamps Maker Location - Shakarpur, East Delhi"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=28.6517,77.2865&z=15&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4372.70923219042!2d77.28558369974597!3d28.63530293581556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcaa1c7b143f%3A0xc6b99e335f6d144d!2sKrishan%20Stapm%20Maker!5e1!3m2!1sen!2sin!4v1765781363631!5m2!1sen!2sin"
           className="border-0"
+          allowFullScreen
         />
       </div>
       
@@ -66,14 +67,14 @@ export default function LocationMap() {
             <div>
               <p className="font-cta text-sm font-bold text-text-primary">Parking</p>
               <p className="font-body text-sm text-text-secondary mt-1">
-                Free parking available in front of shop
+                2-Wheeler Parking Available
               </p>
             </div>
           </div>
         </div>
         
         <a
-          href="https://www.google.com/maps/dir/?api=1&destination=28.6517,77.2865"
+          href="https://www.google.com/maps/dir/?api=1&destination=28.63530293581556,77.28558369974597"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 w-full inline-flex items-center justify-center space-x-2 px-6 py-3 bg-primary text-primary-foreground font-cta font-bold text-sm rounded-lg hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg"
