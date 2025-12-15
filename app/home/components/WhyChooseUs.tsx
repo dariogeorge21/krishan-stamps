@@ -13,9 +13,9 @@ const WhyChooseUs = () => {
   const features: Feature[] = [
     {
       icon: Clock,
-      title: 'Same Day Service',
-      description: 'Need it urgently? We offer express same-day delivery for most products without compromising on quality.',
-      color: 'text-accent'
+      title: 'Quickest Services',
+      description: 'Need it urgently? We offer quickest response for most products without compromising on quality.',
+      color: 'blue-500'
     },
     {
       icon: ShieldCheck,
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
     {
       icon: Users,
       title: 'Expert Team',
-      description: 'Our experienced craftsmen bring over 12 years of expertise to every project, ensuring perfection.',
+      description: 'Our experienced craftsmen bring over 25 years of expertise to every project, ensuring perfection.',
       color: 'text-primary'
     },
     {
@@ -39,11 +39,11 @@ const WhyChooseUs = () => {
       icon: Sparkles,
       title: 'Custom Designs',
       description: 'From simple text to complex logos, we can create any design you need with precision and care.',
-      color: 'text-accent'
+      color: 'blue-500'
     },
     {
       icon: Truck,
-      title: 'Free Delivery',
+      title: 'Quick Delivery',
       description: 'Enjoy complimentary delivery across Delhi NCR for all orders. We bring quality to your doorstep.',
       color: 'text-primary'
     }
@@ -95,10 +95,18 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <a
-              href="tel:+911234567890"
+              href="tel:+919899259454"
               className="px-6 py-3 bg-accent text-accent-foreground font-cta font-bold text-sm rounded-md shadow-md hover:bg-accent/90 hover:shadow-lg transition-all duration-300"
             >
-              +91-12345-67890
+              +91-98992-59454
+            </a>
+            <a
+              href="https://wa.me/919899259454"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-success text-success-foreground font-cta font-bold text-sm rounded-md shadow-md hover:bg-success/90 hover:shadow-lg transition-all duration-300"
+            >
+              Chat on WhatsApp
             </a>
           </div>
         </div>
