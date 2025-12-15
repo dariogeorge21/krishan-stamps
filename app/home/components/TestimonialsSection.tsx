@@ -9,8 +9,6 @@ interface Testimonial {
   name: string;
   role: string;
   company: string;
-  image: string;
-  alt: string;
   rating: number;
   text: string;
   date: string;
@@ -30,44 +28,36 @@ const TestimonialsSection = () => {
     name: "Rajesh Kumar",
     role: "Business Owner",
     company: "Kumar Enterprises",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a891c21d-1763296710025.png",
-    alt: "Professional Indian businessman in navy blue suit smiling confidently in modern office",
     rating: 5,
     text: "Exceptional quality and service! Krishan Stamps delivered our company seals within the same day. The attention to detail and professional finish exceeded our expectations. Highly recommended for any business needs.",
-    date: "2 weeks ago"
+    date: "1 year ago"
   },
   {
     id: 2,
     name: "Priya Sharma",
     role: "Office Manager",
     company: "Tech Solutions Pvt Ltd",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_15f4e23f6-1763300607163.png",
-    alt: "Professional Indian woman in white blazer with warm smile in corporate office setting",
     rating: 5,
     text: "We've been ordering from Krishan Stamps for over 3 years now. Their consistency in quality and timely delivery makes them our go-to vendor for all stamping requirements. The team is always helpful and accommodating.",
-    date: "1 month ago"
+    date: "12 years ago"
   },
   {
     id: 3,
     name: "Amit Patel",
     role: "Procurement Head",
     company: "Global Traders",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_105b96742-1763300606680.png",
-    alt: "Confident Indian professional man in grey suit with glasses in modern corporate environment",
     rating: 5,
     text: "Outstanding craftsmanship! The embossing seals we ordered look absolutely premium. Krishan and his team understood our requirements perfectly and delivered exactly what we needed. Great value for money.",
-    date: "3 weeks ago"
+    date: "3 years ago"
   },
   {
     id: 4,
     name: "Neha Gupta",
     role: "HR Director",
     company: "Sunrise Industries",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d84cd190-1763295718401.png",
-    alt: "Professional Indian woman in burgundy blazer with confident expression in office boardroom",
     rating: 5,
     text: "Impressed with their professionalism and quick turnaround time. We needed bulk stamps for our new office setup, and they handled everything smoothly. The quality is top-notch and pricing is very competitive.",
-    date: "1 week ago"
+    date: "6 months ago"
   }];
 
 
@@ -122,7 +112,7 @@ const TestimonialsSection = () => {
             <span className="font-body text-text-secondary">from 500+ reviews</span>
           </div>
           <p className="font-body text-lg text-text-secondary max-w-2xl mx-auto">
-            Trusted by businesses across Delhi NCR for over 12 years
+            Trusted by businesses across Delhi NCR for over 25 years
           </p>
         </div>
 
@@ -152,14 +142,6 @@ const TestimonialsSection = () => {
 
               {/* Author */}
               <div className="flex flex-col items-center">
-                <div className="relative w-20 h-20 rounded-full overflow-hidden mb-4 ring-4 ring-primary/20">
-                  <Image
-                    src={testimonials[activeIndex].image}
-                    alt={testimonials[activeIndex].alt}
-                    fill
-                    className="object-cover" />
-
-                </div>
                 <h4 className="font-headline text-xl font-bold text-text-primary">
                   {testimonials[activeIndex].name}
                 </h4>
@@ -222,7 +204,7 @@ const TestimonialsSection = () => {
             <p className="font-body text-sm font-semibold text-text-primary">5000+ Customers</p>
           </div>
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 text-accent rounded-full mb-3">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 text-black rounded-full mb-3">
               <Award size={32} />
             </div>
             <p className="font-body text-sm font-semibold text-text-primary">Award Winning</p>
