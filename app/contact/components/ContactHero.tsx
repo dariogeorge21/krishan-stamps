@@ -7,7 +7,7 @@ interface ContactHeroProps {
 
 export default function ContactHero({ title, subtitle }: ContactHeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-primary via-primary/95 to-secondary py-16 lg:py-24">
+    <section className="relative bg-gradient-to-br from-primary via-primary/95 to-slate-500 py-16 lg:py-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -37,7 +37,7 @@ export default function ContactHero({ title, subtitle }: ContactHeroProps) {
               <Zap size={24} className="text-warning fill-current" />
               <div className="text-left">
                 <p className="font-body text-sm text-primary-foreground/80">Same Day</p>
-                <p className="font-cta text-base font-bold text-primary-foreground">Service Available</p>
+                <p className="font-cta text-base font-bold text-primary-foreground">Quick Services Available</p>
               </div>
             </div>
           </div>
