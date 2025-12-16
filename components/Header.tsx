@@ -19,7 +19,7 @@ const Header = () => {
   ];
 
   const contactInfo = {
-    phone: '+91-9899-259-454',
+    phone: '+91-9899259454',
     email: 'krishankumar651@yahoo.com',
     address: 'Shakarpur, Delhi NCR',
     hours: 'Mon-Sat: 10:00 AM - 8:00 PM'
@@ -56,7 +56,7 @@ const Header = () => {
                 className="flex items-center space-x-2 text-primary-foreground hover:text-white transition-colors duration-300 group"
               >
                 <Phone size={16} className="group-hover:scale-110 transition-transform" />
-                <span className="text-sm font-medium">{contactInfo.phone}, 9625495373</span>
+                <span className="text-sm font-medium">{contactInfo.phone}, +91-9625495373</span>
               </a>
               <div className="w-px h-4 bg-primary-foreground/20" />
               <a 
