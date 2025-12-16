@@ -60,7 +60,7 @@ const FeaturedProducts = () => {
     name: "Name Plates",
     category: "Plates",
     description: "Professional name plates in brass, steel, and acrylic. Perfect for offices and homes.",
-    image: "https://5.imimg.com/data5/CQ/NP/MY-3498091/name-plates-500x500.jpg",
+    image: "/images/name-plate.png",
     alt: "Polished brass name plate with engraved text mounted on dark wooden door",
     features: ["Multiple Materials", "Custom Engraving", "Premium Finish"],
     popular: true
