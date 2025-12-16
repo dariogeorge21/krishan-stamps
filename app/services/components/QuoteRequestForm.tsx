@@ -66,9 +66,9 @@ export default function QuoteRequestForm() {
       }[formData.service] || formData.service;
 
       const urgencyLabel = {
-        'standard': 'Standard (3-5 days)',
-        'express': 'Express (1-2 days)',
-        'same-day': 'Same Day'
+        'standard': 'Standard (3-5 hours)',
+        'express': 'Express (1-2 hours)',
+        'same-day': 'Quick'
       }[formData.urgency] || formData.urgency;
 
       const message = `*New Quote Request from Krishan Stamps Website*

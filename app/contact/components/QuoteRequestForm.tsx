@@ -53,9 +53,9 @@ export default function QuoteRequestForm() {
   ];
 
   const urgencyOptions = [
-    { value: 'standard', label: 'Standard (3-5 Days)' },
-    { value: 'express', label: 'Express (1-2 Days)' },
-    { value: 'same-day', label: 'Same Day Service' }
+    { value: 'standard', label: 'Standard (3-5 Hours)' },
+    { value: 'express', label: 'Express (1-2 Hours)' },
+    { value: 'same-day', label: 'Quick' }
   ];
 
   const validateForm = (): boolean => {
