@@ -56,7 +56,7 @@ const Header = () => {
                 className="flex items-center space-x-2 text-primary-foreground hover:text-white transition-colors duration-300 group"
               >
                 <Phone size={16} className="group-hover:scale-110 transition-transform" />
-                <span className="text-sm font-medium">{contactInfo.phone}</span>
+                <span className="text-sm font-medium">{contactInfo.phone}, 9625495373</span>
               </a>
               <div className="w-px h-4 bg-primary-foreground/20" />
               <a 
@@ -104,7 +104,7 @@ const Header = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-headline font-bold text-xl text-primary leading-tight group-hover:text-primary/90 transition-colors">
-                  Krishan Stamps
+                  Krishan Stamps Maker
                 </span>
                 <span className="font-body text-xs text-text-secondary leading-tight font-medium">
                   Professional Stamp Makers

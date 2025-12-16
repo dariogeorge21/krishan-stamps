@@ -48,7 +48,7 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <div className="font-headline font-bold text-xl">Krishan Stamps</div>
+                <div className="font-headline font-bold text-xl">Krishan Stamps Maker</div>
                 <div className="font-body text-xs opacity-80">Professional Maker</div>
               </div>
             </div>
@@ -110,7 +110,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="flex-shrink-0" />
                 <a href="tel:+919899259454" className="font-body text-sm opacity-80 hover:text-accent transition-colors">
-                  +91-98992-59454
+                  +91-98992-59454, 9625495373
                 </a>
               </div>
               <div className="flex items-center space-x-3">
