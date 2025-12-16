@@ -12,7 +12,7 @@ const CTASection = () => {
           </h2>
           
           <p className="font-body text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join 5000+ satisfied customers who trust Krishan Stamps for their professional stamping needs. Get started today with a free quote!
+            Join 500000+ satisfied customers who trust Krishan Stamps for their professional stamping needs. Get started today with a free quote!
           </p>
 
           {/* CTA Buttons */}
@@ -52,7 +52,7 @@ const CTASection = () => {
               <div className="font-body text-sm opacity-80">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="font-headline text-3xl font-bold mb-1">5000+</div>
+              <div className="font-headline text-3xl font-bold mb-1">500000+</div>
               <div className="font-body text-sm opacity-80">Happy Clients</div>
             </div>
             <div className="text-center">

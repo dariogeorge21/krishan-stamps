@@ -22,7 +22,7 @@ const TeamSection = () => {
   {
     name: 'Krishan Kumar',
     role: 'Technical Director',
-    experience: '23+ Years',
+    experience: '35+ Years',
     specialization: 'Precision Engineering & Production',
     phone: '9953206792',
     bio: 'Krishan oversees all technical aspects of production, ensuring precision and consistency across all orders. His engineering background brings innovation to traditional stamp-making processes.'
@@ -30,7 +30,7 @@ const TeamSection = () => {
   {
     name: 'Rahul Kumar',
     role: 'Customer Relations Manager',
-    experience: '23+ Years',
+    experience: '5+ Years',
     specialization: 'Client Consultation & Project Management',
     phone: '9625495373',
     bio: 'Rahul is the bridge between our customers and our production team. His expertise in understanding client needs and managing projects ensures smooth execution and customer satisfaction.'

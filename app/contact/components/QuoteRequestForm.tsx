@@ -176,7 +176,7 @@ Submitted via: Website Quote Form`;
       
       setTimeout(() => {
         setSubmitStatus('idle');
-      }, 5000);
+      }, 500000);
     } finally {
       setIsSubmitting(false);
     }

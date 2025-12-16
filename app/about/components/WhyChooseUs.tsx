@@ -135,7 +135,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                <div className="font-headline font-bold text-4xl mb-2">5000+</div>
+                <div className="font-headline font-bold text-4xl mb-2">500000+</div>
                 <div className="font-body text-sm opacity-90">Happy Customers</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">

@@ -35,7 +35,7 @@ const StatsCounter = () => {
     },
     {
       icon: Users,
-      value: 5000,
+      value: 500000,
       suffix: '+',
       label: 'Happy Customers',
       description: 'Trusted by businesses across Delhi',
@@ -45,7 +45,7 @@ const StatsCounter = () => {
     },
     {
       icon: Target,
-      value: 50000,
+      value: 5000000,
       suffix: '+',
       label: 'Stamps Delivered',
       description: 'Quality stamps crafted with precision',

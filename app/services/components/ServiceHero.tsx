@@ -77,7 +77,7 @@ export default function ServiceHero({ title, description }: ServiceHeroProps) {
               {
                 icon: Star,
                 label: '4.8/5 Rating',
-                description: '5000+ customers'
+                description: '500000+ customers'
               }
             ].map((indicator, index) => {
               const Icon = indicator.icon;

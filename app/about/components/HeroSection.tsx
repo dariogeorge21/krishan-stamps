@@ -10,7 +10,7 @@ interface StatItem {
 const HeroSection = () => {
   const stats: StatItem[] = [
     { icon: Clock, value: '25+', label: 'Years of Excellence' },
-    { icon: Users, value: '5000+', label: 'Happy Customers' },
+    { icon: Users, value: '500000+', label: 'Happy Customers' },
     { icon: Star, value: '4.8/5', label: 'Customer Rating' },
     { icon: Zap, value: 'Same Day', label: 'Service Available' }
   ];

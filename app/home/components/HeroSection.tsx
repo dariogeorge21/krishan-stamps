@@ -26,7 +26,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
   },
   {
     title: "25+ Years of Precision",
-    subtitle: "Trusted by 5000+ Businesses",
+    subtitle: "Trusted by 500000+ Businesses",
     description: "From small enterprises to corporate giants, we deliver quality stamping solutions that stand the test of time.",
     image: "https://www.stampsonclick.com/uploads/product_image/29-06-2017_colop10.jpg",
     alt: "Artisan craftsman carefully engraving custom stamp design on wooden workbench with precision tools"
@@ -74,7 +74,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 5000);
+    }, 500000);
 
     return () => clearInterval(interval);
   }, [isHydrated, heroSlides.length]);
@@ -139,7 +139,7 @@ const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
             </div>
             <div className="flex items-center space-x-2 bg-success/20 backdrop-blur-sm px-4 py-2 rounded-full">
               <Medal size={20} className="text-success" />
-              <span className="font-body font-semibold text-sm">5000+ Customers</span>
+              <span className="font-body font-semibold text-sm">500000+ Customers</span>
             </div>
           </div>
 

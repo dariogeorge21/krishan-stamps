@@ -160,7 +160,7 @@ const TestimonialsHub = () => {
             <div className="font-body text-sm text-text-secondary">Average Rating</div>
           </div>
           <div className="bg-surface rounded-xl p-6 text-center shadow-md">
-            <div className="font-headline font-bold text-4xl text-primary mb-2">5000+</div>
+            <div className="font-headline font-bold text-4xl text-primary mb-2">500000+</div>
             <div className="font-body text-sm text-text-secondary">Happy Customers</div>
           </div>
           <div className="bg-surface rounded-xl p-6 text-center shadow-md">

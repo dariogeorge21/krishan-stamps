@@ -54,7 +54,7 @@ const CTASection = () => {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <Users size={32} className="text-white mx-auto mb-3" />
-              <div className="font-headline font-bold text-2xl text-white mb-1">5000+</div>
+              <div className="font-headline font-bold text-2xl text-white mb-1">500000+</div>
               <div className="font-body text-sm text-white/80">Happy Customers</div>
             </div>
           </div>

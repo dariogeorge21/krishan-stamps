@@ -57,7 +57,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-2">
                 <Star size={16} className="text-warning fill-current" />
-              <span className="font-body text-sm">4.8/5 Rating • 5000+ Customers</span>
+              <span className="font-body text-sm">4.8/5 Rating • 500000+ Customers</span>
             </div>
           </div>
 

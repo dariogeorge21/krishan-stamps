@@ -201,7 +201,7 @@ const TestimonialsSection = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 text-primary rounded-full mb-3">
               <Users size={32} />
             </div>
-            <p className="font-body text-sm font-semibold text-text-primary">5000+ Customers</p>
+            <p className="font-body text-sm font-semibold text-text-primary">500000+ Customers</p>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 text-black rounded-full mb-3">
