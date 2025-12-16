@@ -216,7 +216,7 @@ export default function FAQsInteractive() {
             <div className="max-w-3xl mx-auto">
               <div className="bg-accent/10 rounded-lg p-8 border border-accent/20 text-center">
                 <div className="flex justify-center mb-6">
-                  <Mail className="w-12 h-12 text-accent" />
+                  <Mail className="w-12 h-12 text-black" />
                 </div>
                 <h2 className="font-headline text-2xl md:text-3xl font-bold text-text-primary mb-4">
                   Still Have Questions?
@@ -230,7 +230,7 @@ export default function FAQsInteractive() {
                     <p className="font-body font-semibold text-text-primary">Call Us</p>
                     <a 
                       href="tel:+919899259454" 
-                      className="font-body text-accent hover:text-accent/80 transition-colors"
+                      className="font-body text-black hover:text-accent/80 transition-colors"
                     >
                       +91-98992-59454
                     </a>
@@ -239,7 +239,7 @@ export default function FAQsInteractive() {
                     <p className="font-body font-semibold text-text-primary">Email Us</p>
                     <a 
                       href="mailto:krishankumar651@yahoo.com" 
-                      className="font-body text-accent hover:text-accent/80 transition-colors"
+                      className="font-body text-black hover:text-accent/80 transition-colors"
                     >
                       krishankumar651@yahoo.com
                     </a>
@@ -250,7 +250,7 @@ export default function FAQsInteractive() {
                       href="https://maps.app.goo.gl/KYC2xUJGVj7dDtLi9" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="font-body text-accent hover:text-accent/80 transition-colors"
+                      className="font-body text-black hover:text-accent/80 transition-colors"
                     >
                       Shop No.17, Shakarpur
                     </a>
