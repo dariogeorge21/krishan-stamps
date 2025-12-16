@@ -59,9 +59,9 @@ const GallerySection = () => {
       text: ''
     },
     {
-      image: '/images/image14.jpeg',
+      image: '/images/name-plate-2.png',
       text: ''
-    },
+    }
     
   ];
   // Distribute 15 images across 4 columns: [4, 4, 4, 3]
