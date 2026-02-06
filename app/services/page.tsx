@@ -5,8 +5,20 @@ import Footer from '@/components/Footer';
 import FloatingContactButtons from '@/components/FloatingContactButtons';
 
 export const metadata: Metadata = {
-  title: 'Services - Krishan Stamps Professional',
-  description: 'Comprehensive stamping solutions including custom design consultation, bulk orders, same-day express service, and general printing. Serving Delhi NCR with 12+ years of expertise and premium quality guaranteed.'
+  title: 'Professional Stamping Services | Custom Stamps in Delhi NCR',
+  description: 'Comprehensive stamping solutions including custom design consultation, bulk orders, same-day express service, and general printing. Serving Delhi NCR with 12+ years of expertise and premium quality guaranteed.',
+  canonical: 'https://krishanstampsmaker.in/services',
+  openGraph: {
+    type: 'website',
+    url: 'https://krishanstampsmaker.in/services',
+    title: 'Professional Stamping Services | Custom Stamps in Delhi NCR',
+    description: 'Custom design consultation, bulk orders, same-day express service, and comprehensive printing solutions.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Professional Stamping Services',
+    description: 'Custom stamps, bulk orders, same-day express service, and comprehensive printing solutions.',
+  },
 };
 
 export default function ServicesPage() {
