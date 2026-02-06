@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Phone, Menu, X, Star, Clock, Zap, ShieldCheck, Mail, MapPin, ChevronRight } from "lucide-react";
+import { Phone, Menu, X, Star, Clock, Zap, ShieldCheck, Mail, MapPin, ChevronRight, Instagram, Facebook, Youtube } from "lucide-react";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,6 +24,24 @@ const Header = () => {
     address: 'Shakarpur, Delhi NCR',
     hours: 'Mon-Sat: 10:00 AM - 8:00 PM'
   };
+
+  const socialLinks = [
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/krishanstampsmaker/',
+      icon: Instagram,
+    },
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com/profile.php?id=61580728542853',
+      icon: Facebook,
+    },
+    {
+      name: 'YouTube',
+      url: 'https://www.youtube.com/@Krishan_rubberstamp',
+      icon: Youtube,
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,10 +91,31 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Right Business Hours */}
-            <div className="flex items-center space-x-2 text-primary-foreground">
-              <Clock size={16} />
-              <span className="text-sm font-medium">{contactInfo.hours}</span>
+            {/* Right Business Hours & Social Links */}
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-2 text-primary-foreground">
+                <Clock size={16} />
+                <span className="text-sm font-medium">{contactInfo.hours}</span>
+              </div>
+              <div className="w-px h-4 bg-primary-foreground/20" />
+              <div className="flex items-center space-x-3">
+                {socialLinks?.map((social, index) => {
+                  const Icon = social.icon;
+                  return (
+                    <a
+                      key={index}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary-foreground hover:scale-110 hover:text-white transition-all duration-300"
+                      aria-label={`Follow us on ${social.name}`}
+                      title={social.name}
+                    >
+                      <Icon size={18} />
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

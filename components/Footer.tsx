@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, ChevronRight, CheckCircle, MapPin, Phone, Mail } from 'lucide-react'
+import { Star, ChevronRight, CheckCircle, MapPin, Phone, Mail, Instagram, Facebook, Youtube, ExternalLink } from 'lucide-react'
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState<number | null>(null);
@@ -31,10 +31,31 @@ const Footer = () => {
     'Common Seals',
   ];
 
+  const socialLinks = [
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/krishanstampsmaker/',
+      icon: Instagram,
+      color: 'hover:text-pink-500'
+    },
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com/profile.php?id=61580728542853',
+      icon: Facebook,
+      color: 'hover:text-blue-600'
+    },
+    {
+      name: 'YouTube',
+      url: 'https://www.youtube.com/@Krishan_rubberstamp',
+      icon: Youtube,
+      color: 'hover:text-red-600'
+    },
+  ];
+
   return (
     <footer className="bg-text-primary text-white">
       <div className="container mx-auto px-4 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
@@ -97,28 +118,78 @@ const Footer = () => {
             <h3 className="font-headline font-bold text-lg mb-4">Contact Us</h3>
             <div className="space-y-3">
               <a 
-                href="https://maps.app.goo.gl/KYC2xUJGVj7dDtLi9" 
+                href="https://maps.app.goo.gl/TAaxzhaavLtxBNtz8" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-start space-x-3 hover:text-accent transition-colors"
+                className="flex items-start space-x-3 hover:text-accent transition-colors group"
               >
-                <MapPin size={18} className="flex-shrink-0 mt-0.5" />
-                <div className="font-body text-sm opacity-80 hover:opacity-100">
+                <MapPin size={18} className="flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                <div className="font-body text-sm opacity-80 hover:opacity-100 group-hover:text-accent">
+                  <div className="font-semibold text-white mb-1">Visit Our Location</div>
                   Shop No.17, Veer Savarkar Block,<br /> Shakarpur, Delhi-110092
                 </div>
               </a>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="flex-shrink-0" />
-                <a href="tel:+919899259454" className="font-body text-sm opacity-80 hover:text-accent transition-colors">
-                  +91-98992-59454, 9625495373
-                </a>
+                <div className="font-body text-sm opacity-80">
+                  <div className="font-semibold text-white mb-0.5">Call Us</div>
+                  <a href="tel:+919899259454" className="hover:text-accent transition-colors">
+                    +91-9899259454
+                  </a>
+                  <br />
+                  <a href="tel:+919625495373" className="hover:text-accent transition-colors">
+                    9625495373
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="flex-shrink-0" />
                 <a href="mailto:krishankumar651@yahoo.com" className="font-body text-sm opacity-80 hover:text-accent transition-colors">
+                  <div className="font-semibold text-white mb-0.5">Email</div>
                   krishankumar651@yahoo.com
                 </a>
               </div>
+            </div>
+          </div>
+
+          {/* Follow Us - Social Media */}
+          <div>
+            <h3 className="font-headline font-bold text-lg mb-4">Follow Us</h3>
+            <p className="font-body text-sm opacity-80 mb-6">
+              Connect with us on social media for updates and offers.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {socialLinks?.map((social, index) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`p-3 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20 ${social.color} transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-110 group flex items-center justify-center`}
+                    aria-label={`Follow us on ${social.name}`}
+                    title={social.name}
+                  >
+                    <Icon size={20} className="transition-transform group-hover:-translate-y-1" />
+                  </a>
+                );
+              })}
+              <a
+                href="https://maps.app.goo.gl/TAaxzhaavLtxBNtz8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20 hover:text-orange-500 transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-110 group flex items-center justify-center"
+                aria-label="Visit us on Google Maps"
+                title="Google Maps Location"
+              >
+                <MapPin size={20} className="transition-transform group-hover:-translate-y-1" />
+              </a>
+            </div>
+            <div className="mt-6 p-4 bg-white/5 rounded-lg border border-white/10">
+              <p className="font-body text-xs opacity-70">
+                <span className="font-semibold text-white">Hours:</span> Mon-Sat, 10:00 AM - 8:00 PM IST
+              </p>
             </div>
           </div>
         </div>
