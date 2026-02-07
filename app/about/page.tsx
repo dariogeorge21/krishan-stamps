@@ -4,7 +4,6 @@ import AboutInteractive from './components/AboutInteractive';
 export const metadata: Metadata = {
   title: 'About Us - Krishan Stamps Professional | 12+ Years of Excellence',
   description: 'Discover Krishan Stamps Maker\'s 12+ year heritage of traditional craftsmanship and modern efficiency. Meet our expert team and learn why we\'re Delhi NCR\'s trusted stamping solution provider since 2012.',
-  canonical: 'https://krishanstampsmaker.in/about',
   openGraph: {
     type: 'website',
     url: 'https://krishanstampsmaker.in/about',
@@ -15,6 +14,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Krishan Stamps - 12+ Years of Excellence',
     description: 'Learn about our heritage, expertise, and commitment to professional stamping solutions.',
+  },
+  alternates: {
+    canonical: 'https://krishanstampsmaker.in/about',
   },
 };
 

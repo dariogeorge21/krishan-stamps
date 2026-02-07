@@ -20,9 +20,8 @@ export const metadata = {
     google: "1-t2N8XBo8PBMbncoxxeX3T54I6GebFHaJNRjVqBVug",
   },
   metadataBase: new URL('https://krishanstampsmaker.in'),
-  canonical: 'https://krishanstampsmaker.in',
   openGraph: {
-    type: 'business.business',
+    type: 'website',
     locale: 'en_US',
     url: 'https://krishanstampsmaker.in',
     siteName: 'Krishan Stamps Maker',

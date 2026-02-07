@@ -4,7 +4,6 @@ import PrivacyPolicyInteractive from './components/PrivacyPolicyInteractive';
 export const metadata: Metadata = {
   title: 'Privacy Policy - Krishan Stamps Professional | Your Data Protection',
   description: 'Read our privacy policy to understand how Krishan Stamps Professional collects, uses, and protects your personal information when you use our stamping services.',
-  canonical: 'https://krishanstampsmaker.in/privacy-policy',
   openGraph: {
     type: 'website',
     url: 'https://krishanstampsmaker.in/privacy-policy',
@@ -13,6 +12,9 @@ export const metadata: Metadata = {
   },
   robots: {
     index: false,
+  },
+  alternates: {
+    canonical: 'https://krishanstampsmaker.in/privacy-policy',
   },
 };
 

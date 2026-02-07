@@ -7,7 +7,6 @@ import FloatingContactButtons from '@/components/FloatingContactButtons';
 export const metadata: Metadata = {
   title: 'Professional Stamping Services | Custom Stamps in Delhi NCR',
   description: 'Comprehensive stamping solutions including custom design consultation, bulk orders, same-day express service, and general printing. Serving Delhi NCR with 12+ years of expertise and premium quality guaranteed.',
-  canonical: 'https://krishanstampsmaker.in/services',
   openGraph: {
     type: 'website',
     url: 'https://krishanstampsmaker.in/services',
@@ -18,6 +17,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Professional Stamping Services',
     description: 'Custom stamps, bulk orders, same-day express service, and comprehensive printing solutions.',
+  },
+  alternates: {
+    canonical: 'https://krishanstampsmaker.in/services',
   },
 };
 

@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: 'Krishan Stamps Maker - Custom Rubber Stamps & Printing Solutions',
   description:
     'Explore Krishan Stamps Maker, your trusted partner for custom rubber stamps, self-inking stamps, embossing seals, and name plates. Serving Delhi NCR since 2012 with fast, reliable, and high-quality stamping solutions.',
-  canonical: 'https://krishanstampsmaker.in',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -19,6 +18,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Krishan Stamps Maker - Custom Rubber Stamps',
     description: 'Custom rubber stamps and professional printing solutions in Delhi NCR.',
+  },
+  alternates: {
+    canonical: 'https://krishanstampsmaker.in',
   },
 };
 

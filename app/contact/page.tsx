@@ -5,7 +5,6 @@ import ContactInteractive from './components/ContactInteractive';
 export const metadata: Metadata = {
   title: 'Contact Krishan Stamps | Same-Day Service & Quick Response',
   description: 'Get in touch with Krishan Stamps for custom stamp solutions in Delhi NCR. Call +91-98765-43210 or visit our Shakarpur shop. Same-day service available with 2-hour response guarantee.',
-  canonical: 'https://krishanstampsmaker.in/contact',
   openGraph: {
     type: 'website',
     url: 'https://krishanstampsmaker.in/contact',
@@ -16,6 +15,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Krishan Stamps',
     description: 'Get in touch for custom stamps. Same-day service in Delhi NCR.',
+  },
+  alternates: {
+    canonical: 'https://krishanstampsmaker.in/contact',
   },
 };
 
